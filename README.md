@@ -85,6 +85,7 @@
 | 54 | [ARESHAmohanad/BugHunter-AI](https://github.com/ARESHAmohanad/BugHunter-AI) | 15 | Python | 渗透 Agent | 赛博朋克风 AI 渗透 Agent，未来感 GUI |
 | 55 | [chainreactors/aide-for-pentest](https://github.com/chainreactors/aide-for-pentest) | 13 | Python | 渗透助手 | （无简介） |
 | 56 | [gfranrp/Auto-Pentest-LLM](https://github.com/gfranrp/Auto-Pentest-LLM) | 5 | Python | 渗透 Agent | 本地 LLM + Kali 自动化渗透 |
+| 58 | [ASCIT31/Dark-Moon](https://github.com/ASCIT31/Dark-Moon) | 687 | Python | 渗透 Agent | 开源自主 AI 渗透平台与 MCP 宿主，按技术栈分工的攻击子代理（GraphQL/Spring/.NET/Node/PHP/Ruby/WordPress），覆盖 Active Directory 与 Kubernetes，编排 80+ 工具，每个漏洞附带证据链 |
 | 57 | [umangkartikey/forge](https://github.com/umangkartikey/forge) | 3 | Python | 自治框架 | 自主 AI 安全框架，自我复制蜂群 |
 
 > 备注：1k–10k 区间的 Star 数为 GitHub 网页缩写值的换算结果；万级以上误差更大。

@@ -1,26 +1,26 @@
 # Offensive AI Agentic 全景：项目 / 论文 / Benchmark / 商业产品 一览
-*Offensive AI Agentic Landscape: Projects, Papers, Benchmarks & Commercial Solutions*
+*Offensive AI Agents Landscape: Projects, Papers, Benchmarks & Commercial Solutions*
 <img width="1073" height="564" alt="Clipboard_Screenshot_1780047912" src="https://github.com/user-attachments/assets/793799dc-53e7-4fee-8959-654fbc09c902" />
 
 <div align="center">
 
-| 🛠️ Projects | 📑 Papers | 🧪 Benchmarks | 📚 Awesome Lists | 💼 Commercial |
-|:---:|:---:|:---:|:---:|:---:|
-| **61** | **67** | **12** | **6** | **48** |
-| 渗透 / 红队 / CTF / AIxCC Agent | 2023-06 → 2026-01 | 2023-06 → 2025-08 | 资源索引 | 国外 39 + 国内 9 |
+| 🛠️ Projects | 🧬 Models | 📑 Papers | 🧪 Benchmarks | 📚 Awesome Lists | 💼 Commercial |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| **64** | **7** | **73** | **12** | **6** | **48** |
+| 渗透 / 红队 / CTF / AIxCC Agent | 进攻 3 + 安全专用 4 | 2023-06 → 2026-07 | 2023-06 → 2025-08 | 资源索引 | 国外 39 + 国内 9 |
 
 </div>
 
-> 本文档系统整理了 **AI 渗透测试 / LLM 红队 / 自主攻击 Agent / 漏洞挖掘** 领域的开源项目、学术论文、能力评测 Benchmark 与国内外商业化解决方案，旨在帮助研究者、安全工程师与企业安全决策者快速建立领域全景认知。
+> 本文档系统整理了 **AI 渗透测试 / LLM 红队 / 自主攻击 Agent / 漏洞挖掘** 领域的开源项目、进攻型 / 安全专用开源模型、学术论文、能力评测 Benchmark 与国内外商业化解决方案，旨在帮助研究者、安全工程师与企业安全决策者快速建立领域全景认知。
 >
-> *This document curates open-source projects, academic papers, capability benchmarks, and commercial solutions (international & China) in the field of **AI penetration testing, LLM red teaming, autonomous offensive agents, and vulnerability discovery**, aimed at helping researchers, security engineers, and enterprise decision-makers quickly form a holistic view.*
+> *This document curates open-source projects, offensive & security-specialized open-weight models, academic papers, capability benchmarks, and commercial solutions (international & China) in the field of **AI penetration testing, LLM red teaming, autonomous offensive agents, and vulnerability discovery**, aimed at helping researchers, security engineers, and enterprise decision-makers quickly form a holistic view.*
 >
-> 数据采集时点：2026-05-29 ｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
+> 数据采集时点：2026-07-13（18:20 二次校对 Star 数）｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
 
 ---
 
 ## 📋 项目总表
-*Project Master Table (61 repos after merging)*
+*Project Master Table*
 
 > 按 Star 数降序排列。
 > ⭐**新补充** = 本次新增（含三个 awesome list 互补的项目）
@@ -29,66 +29,102 @@
 
 | # | 项目 | Stars | 语言 | 类型 | 简介 |
 |---|------|-------|------|------|------|
-| 1 | [KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon) | 43.9k | TypeScript | 渗透 Agent | 面向 Web 应用和 API 的自主白盒 AI 渗透测试工具 |
-| 2 | [usestrix/strix](https://github.com/usestrix/strix) | 25.7k | Python | 渗透 Agent | 开源 AI 黑客，发现并修复应用漏洞 |
-| 3 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 21.7k | TypeScript | LLM 红队 | LLM 应用红队/渗透/漏洞扫描，OpenAI、Anthropic 在用 |
-| 4 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | 17.3k | Go | 渗透 Agent | 全自主 AI 代理系统，执行复杂渗透测试任务 |
-| 5 | [GreyDGL/PentestGPT](https://github.com/GreyDGL/PentestGPT) | 13.3k | Python | 渗透 Agent | LLM 驱动的自动化渗透测试代理框架（早期标杆） |
-| 6 | [0x4m4/hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) | 9.0k | Python | MCP / 渗透 | MCP 服务器，让 AI Agent 自主运行 150+ 安全工具 |
-| 7 | [aliasrobotics/cai](https://github.com/aliasrobotics/cai) | 8.8k | Python | 安全 AI 框架 | Cybersecurity AI（CAI）安全框架 |
-| 8 | [NVIDIA/garak](https://github.com/NVIDIA/garak) | 8.0k | Python | LLM 红队 | LLM 漏洞扫描器（"LLM 界的 nmap"） |
+| 1 | [KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon) | 45.6k | TypeScript | 渗透 Agent | 面向 Web 应用和 API 的自主白盒 AI 渗透测试工具 |
+| 2 | [usestrix/strix](https://github.com/usestrix/strix) | 41.0k | Python | 渗透 Agent | 开源 AI 黑客，发现并修复应用漏洞 |
+| 3 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 23.2k | TypeScript | LLM 红队 | LLM 应用红队/渗透/漏洞扫描，OpenAI、Anthropic 在用 |
+| 4 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | 20.3k | Go | 渗透 Agent | 全自主 AI 代理系统，执行复杂渗透测试任务 |
+| 5 | [GreyDGL/PentestGPT](https://github.com/GreyDGL/PentestGPT) | 14.2k | Python | 渗透 Agent | LLM 驱动的自动化渗透测试代理框架（早期标杆） |
+| 6 | [0x4m4/hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) | 10.3k | Python | MCP / 渗透 | MCP 服务器，让 AI Agent 自主运行 150+ 安全工具 |
+| 7 | [aliasrobotics/cai](https://github.com/aliasrobotics/cai) | 9.4k | Python | 安全 AI 框架 | Cybersecurity AI（CAI）安全框架 |
+| 8 | [NVIDIA/garak](https://github.com/NVIDIA/garak) | 8.4k | Python | LLM 红队 | LLM 漏洞扫描器（"LLM 界的 nmap"） |
 | 9 | [OWASP/Nettacker](https://github.com/OWASP/Nettacker) | 5.2k | Python | 自动化扫描 | OWASP 自动化渗透测试 / 漏扫框架 |
-| 10 | [Ed1s0nZ/CyberStrikeAI](https://github.com/Ed1s0nZ/CyberStrikeAI) | 4.0k | Go | 渗透 Agent | Go 构建的 AI 原生安全测试平台 |
-| 11 | [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | 3.9k | Python | LLM 红队 | 生成式 AI 风险识别工具（Microsoft） |
-| 12 | [protectai/vulnhuntr](https://github.com/protectai/vulnhuntr) | 2.7k | Python | 漏洞挖掘 | LLM 零样本漏洞发现，"首个 AI 自主发现 0day" |
-| 13 | [GH05TCREW/pentestagent](https://github.com/GH05TCREW/pentestagent) | 2.5k | Python | 渗透 Agent | 黑盒安全测试 AI Agent 框架（GHOSTCREW） |
-| 14 | [samugit83/redamon](https://github.com/samugit83/redamon) | 1.9k | Python | 红队 Agent | AI 驱动的代理式红队框架 |
-| 15 | [msoedov/agentic_security](https://github.com/msoedov/agentic_security) | 1.9k | Python | LLM 红队 | Agentic LLM 漏洞扫描器 |
-| 16 | [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | 1.8k | Python | LLM 红队 | DeepTeam — LLM 红队测试框架 |
-| 17 | [0xSteph/pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) | 1.6k | Shell | Claude SubAgent | 将 Claude Code 转为攻击性安全研究助手 |
-| 18 | [trailofbits/buttercup](https://github.com/trailofbits/buttercup) | 1.6k | Python | 漏洞修复 | Trail of Bits 出品（也是 AIxCC 第二名 CRS） |
-| 19 | [zakirkun/guardian-cli](https://github.com/zakirkun/guardian-cli) | 1.4k | Python | 渗透 Agent | 生产级 AI 渗透 CLI（Gemini + LangChain） |
-| 20 | [oritera/Cairn](https://github.com/oritera/Cairn) | 1.3k | Python | 渗透 Agent | 通用状态空间搜索引擎，自主渗透 |
-| 21 | [utkusen/promptmap](https://github.com/utkusen/promptmap) | 1.2k | Python | LLM 红队 | LLM Prompt Injection 自动化扫描器 |
-| 22 | [Gowtham-Darkseid/AutoPentestX](https://github.com/Gowtham-Darkseid/AutoPentestX) | 1.2k | Python | 渗透 Agent | 自动化渗透测试与漏洞报告 |
-| 23 | [ipa-lab/hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) | 1.1k | Python | 渗透 Agent | 50 行代码内调用 LLM 协助伦理黑客 |
-| 24 | [splx-ai/agentic-radar](https://github.com/splx-ai/agentic-radar) ⭐**新补充** | 973 | Python | Agent 安全扫描 | LLM Agentic 工作流安全扫描器（OpenAI Agents、CrewAI、LangGraph 等）|
-| 25 | [berylliumsec/nebula](https://github.com/berylliumsec/nebula) | 964 | Python | 渗透助手 | AI 渗透助手，自动侦察 / 笔记 / 漏洞分析 |
-| 26 | [SanMuzZzZz/LuaN1aoAgent](https://github.com/SanMuzZzZz/LuaN1aoAgent) | 961 | Python | 渗透 Agent | 全自主 AI 渗透 Agent，XBOW >90% |
-| 27 | [bugbasesecurity/pentest-copilot](https://github.com/bugbasesecurity/pentest-copilot) | 847 | JavaScript | 浏览器助手 | 浏览器端的道德黑客辅助工具 |
-| 28 | [ghostsecurity/reaper](https://github.com/ghostsecurity/reaper) ⭐**新补充** | 864 | Go | 测试代理 | Ghost Security 出品的实时验证代理工具，对人 / Agent 双友好 |
-| 29 | [verialabs/ctf-agent](https://github.com/verialabs/ctf-agent) | 539 | Python | CTF Agent | 自主 CTF solver，BSidesSF 2026 第一名 |
-| 30 | [westonbrown/Cyber-AutoAgent](https://github.com/westonbrown/Cyber-AutoAgent) ⭐**新补充** | 530 | TypeScript | 渗透 Agent | XBOW 验证基准 85%，已归档但代表性强 |
-| 31 | [xalgord/xalgorix](https://github.com/xalgord/xalgorix) | 510 | Go | 渗透 Agent | 开源 AI 渗透测试 Agent |
-| 32 | [crond-jaist/AutoPentest-DRL](https://github.com/crond-jaist/AutoPentest-DRL) | 431 | Python | 强化学习渗透 | 使用深度强化学习的自动化渗透测试 |
-| 33 | [0ca/BoxPwnr](https://github.com/0ca/BoxPwnr) ⭐**新补充** | 401 | Python | 渗透 Agent / 多平台基准 | HackTheBox / TryHackMe / picoCTF / Cybench / XBOW 等 15 个平台基准框架 |
-| 34 | [ARCANGEL0/EVA](https://github.com/ARCANGEL0/EVA) | 402 | Python | 渗透 Agent | AI 辅助渗透测试代理，多后端 AI 集成 |
-| 35 | [SHAdd0WTAka/Zen-Ai-Pentest](https://github.com/SHAdd0WTAka/Zen-Ai-Pentest) | 380 | Python | 渗透 Agent | 多代理 AI 渗透框架 + 合规报告 |
-| 36 | [aielte-research/HackSynth](https://github.com/aielte-research/HackSynth) ⭐**新补充** | 310 | Python | 渗透 Agent | Planner + Summarizer 双模块，PicoCTF / OverTheWire 200 题（arXiv:2412.01778）|
-| 37 | [transilienceai/communitytools](https://github.com/transilienceai/communitytools) | 307 | Python | Claude 工具集 | 开源 Claude Code skills/agents/slash command |
-| 38 | [m-sec-org/BreachWeave](https://github.com/m-sec-org/BreachWeave) | 276 | TypeScript | 渗透 Agent | Manager/Observer/Solver 多角色架构 |
-| 39 | [yz9yt/BugTrace-AI](https://github.com/yz9yt/BugTrace-AI) | 250 | TypeScript | 漏洞追踪 | （已归档，演进为 BugTraceAI v2） |
-| 40 | [xoxruns/deadend-cli](https://github.com/xoxruns/deadend-cli) ⭐**新补充** | 244 | Python | 渗透 Agent | XBOW 黑盒 81%，约 $122 API 成本，本地化执行 |
-| 41 | [simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest) | 201 | - | 研究项目 | LLM4Pentest 研究代码 |
-| 42 | [GitHubSecurityLab/seclab-taskflow-agent](https://github.com/GitHubSecurityLab/seclab-taskflow-agent) ⭐**新补充** | 199 | Python | Agent 框架 | GitHub Security Lab 出品，YAML 驱动多 Agent + CodeQL |
-| 43 | [chainreactors/tinyctfer](https://github.com/chainreactors/tinyctfer) | 169 | Python | CTF Agent | antix 微型意图运行时 + 元工具设计 |
-| 44 | [KHenryAegis/VulnBot](https://github.com/KHenryAegis/VulnBot) | 167 | Python | 渗透 Agent | 多代理协作框架的自主渗透测试 |
-| 45 | [NYU-LLM-CTF/nyuctf_agents](https://github.com/NYU-LLM-CTF/nyuctf_agents) | 147 | Python | CTF Agent | NYU CTF Bench 配套的 D-CIPHER + Baseline |
-| 46 | [antoninoLorenzo/AI-OPS](https://github.com/antoninoLorenzo/AI-OPS) | 139 | Python | 渗透助手 | 基于开源 LLM 的渗透测试 AI 助手 |
-| 47 | [andreashappe/cochise](https://github.com/andreashappe/cochise) | 117 | Python | AD 渗透 Agent | 自主 Assumed Breach AD 渗透（TOSEM 2025）|
-| 48 | [arthurgervais/mapta](https://github.com/arthurgervais/mapta) ⭐**新补充** | 102 | Python | 渗透 Agent | 多 Agent Web 应用安全评估 + 端到端漏洞利用验证（arXiv:2508.20816）|
-| 49 | [vikramrajkumarmajji/AI-VAPT](https://github.com/vikramrajkumarmajji/AI-VAPT) | 96 | TypeScript | VAPT 框架 | 自主 AI 漏洞评估与渗透测试框架 |
-| 50 | [amazon-science/Cyber-Zero](https://github.com/amazon-science/Cyber-Zero) | 91 | Python | 训练框架 | 无运行时训练网络安全代理（Amazon Science） |
-| 51 | [RamKansal/pentestMCP](https://github.com/RamKansal/pentestMCP) | 68 | Python | MCP | 面向渗透测试的 MCP |
-| 52 | [AI-secure/UDora](https://github.com/AI-secure/UDora) | 36 | Python | LLM 红队 | [ICML 2025] 针对 LLM Agents 的统一红队框架 |
-| 53 | [yashab-cyber/hackbot](https://github.com/yashab-cyber/hackbot) | 23 | Python | 渗透助手 | 生产级 AI 渗透 / 安全助手，三种工作模式 |
-| 54 | [ARESHAmohanad/BugHunter-AI](https://github.com/ARESHAmohanad/BugHunter-AI) | 15 | Python | 渗透 Agent | 赛博朋克风 AI 渗透 Agent，未来感 GUI |
-| 55 | [chainreactors/aide-for-pentest](https://github.com/chainreactors/aide-for-pentest) | 13 | Python | 渗透助手 | （无简介） |
-| 56 | [gfranrp/Auto-Pentest-LLM](https://github.com/gfranrp/Auto-Pentest-LLM) | 5 | Python | 渗透 Agent | 本地 LLM + Kali 自动化渗透 |
+| 10 | [Ed1s0nZ/CyberStrikeAI](https://github.com/Ed1s0nZ/CyberStrikeAI) | 5.1k | Go | 渗透 Agent | Go 构建的 AI 原生安全测试平台 |
+| 11 | [elder-plinius/T3MP3ST](https://github.com/elder-plinius/T3MP3ST) ⭐**新补充** | 4.6k | TypeScript | 红队 Agent | 自主红队平台 / 多智能体进攻性安全元框架，复用本机 AI 编码代理（Claude Code/Codex/Ollama 等）作零日漏洞猎手 |
+| 12 | [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | 4.1k | Python | LLM 红队 | 生成式 AI 风险识别工具（Microsoft） |
+| 13 | [GH05TCREW/pentestagent](https://github.com/GH05TCREW/pentestagent) | 2.8k | Python | 渗透 Agent | 黑盒安全测试 AI Agent 框架（GHOSTCREW） |
+| 14 | [protectai/vulnhuntr](https://github.com/protectai/vulnhuntr) | 2.7k | Python | 漏洞挖掘 | LLM 零样本漏洞发现，"首个 AI 自主发现 0day" |
+| 15 | [samugit83/redamon](https://github.com/samugit83/redamon) | 2.2k | Python | 红队 Agent | AI 驱动的代理式红队框架 |
+| 16 | [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | 2.1k | Python | LLM 红队 | DeepTeam — LLM 红队测试框架 |
+| 17 | [0xSteph/pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) | 2.0k | Shell | Claude SubAgent | 将 Claude Code 转为攻击性安全研究助手 |
+| 18 | [oritera/Cairn](https://github.com/oritera/Cairn) | 2.0k | Python | 渗透 Agent | 通用状态空间搜索引擎，自主渗透 |
+| 19 | [msoedov/agentic_security](https://github.com/msoedov/agentic_security) | 1.9k | Python | LLM 红队 | Agentic LLM 漏洞扫描器 |
+| 20 | [zakirkun/guardian-cli](https://github.com/zakirkun/guardian-cli) | 1.7k | Python | 渗透 Agent | 生产级 AI 渗透 CLI（Gemini + LangChain） |
+| 21 | [trailofbits/buttercup](https://github.com/trailofbits/buttercup) | 1.6k | Python | 漏洞修复 | Trail of Bits 出品（也是 AIxCC 第二名 CRS） |
+| 22 | [Gowtham-Darkseid/AutoPentestX](https://github.com/Gowtham-Darkseid/AutoPentestX) | 1.4k | Python | 渗透 Agent | 自动化渗透测试与漏洞报告 |
+| 23 | [utkusen/promptmap](https://github.com/utkusen/promptmap) | 1.2k | Python | LLM 红队 | LLM Prompt Injection 自动化扫描器 |
+| 24 | [ipa-lab/hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) | 1.2k | Python | 渗透 Agent | 50 行代码内调用 LLM 协助伦理黑客 |
+| 25 | [bugbasesecurity/pentest-copilot](https://github.com/bugbasesecurity/pentest-copilot) | 1.1k | JavaScript | 浏览器助手 | 浏览器端的道德黑客辅助工具 |
+| 26 | [berylliumsec/nebula](https://github.com/berylliumsec/nebula) | 1.1k | Python | 渗透助手 | AI 渗透助手，自动侦察 / 笔记 / 漏洞分析 |
+| 27 | [SanMuzZzZz/LuaN1aoAgent](https://github.com/SanMuzZzZz/LuaN1aoAgent) | 1.1k | Python | 渗透 Agent | 全自主 AI 渗透 Agent，XBOW >90%（广州大学）|
+| 28 | [splx-ai/agentic-radar](https://github.com/splx-ai/agentic-radar) ⭐**新补充** | 998 | Python | Agent 安全扫描 | LLM Agentic 工作流安全扫描器（OpenAI Agents、CrewAI、LangGraph 等）|
+| 29 | [ghostsecurity/reaper](https://github.com/ghostsecurity/reaper) ⭐**新补充** | 875 | Go | 测试代理 | Ghost Security 出品的实时验证代理工具，对人 / Agent 双友好 |
+| 30 | [xalgord/xalgorix](https://github.com/xalgord/xalgorix) | 732 | Go | 渗透 Agent | 开源 AI 渗透测试 Agent |
+| 31 | [verialabs/ctf-agent](https://github.com/verialabs/ctf-agent) | 613 | Python | CTF Agent | 自主 CTF solver，BSidesSF 2026 第一名 |
+| 32 | [westonbrown/Cyber-AutoAgent](https://github.com/westonbrown/Cyber-AutoAgent) ⭐**新补充** | 534 | TypeScript | 渗透 Agent | XBOW 验证基准 85%，已归档但代表性强 |
+| 33 | [crond-jaist/AutoPentest-DRL](https://github.com/crond-jaist/AutoPentest-DRL) | 438 | Python | 强化学习渗透 | 使用深度强化学习的自动化渗透测试 |
+| 34 | [0ca/BoxPwnr](https://github.com/0ca/BoxPwnr) ⭐**新补充** | 428 | Python | 渗透 Agent / 多平台基准 | HackTheBox / TryHackMe / picoCTF / Cybench / XBOW 等 15 个平台基准框架 |
+| 35 | [ARCANGEL0/EVA](https://github.com/ARCANGEL0/EVA) | 424 | Python | 渗透 Agent | AI 辅助渗透测试代理，多后端 AI 集成 |
+| 36 | [m-sec-org/BreachWeave](https://github.com/m-sec-org/BreachWeave) | 419 | TypeScript | 渗透 Agent | Manager/Observer/Solver 多角色架构 |
+| 37 | [SHAdd0WTAka/Zen-Ai-Pentest](https://github.com/SHAdd0WTAka/Zen-Ai-Pentest) | 413 | Python | 渗透 Agent | 多代理 AI 渗透框架 + 合规报告 |
+| 38 | [transilienceai/communitytools](https://github.com/transilienceai/communitytools) | 407 | Python | Claude 工具集 | 开源 Claude Code skills/agents/slash command |
+| 39 | [aielte-research/HackSynth](https://github.com/aielte-research/HackSynth) ⭐**新补充** | 309 | Python | 渗透 Agent | Planner + Summarizer 双模块，PicoCTF / OverTheWire 200 题（arXiv:2412.01778）|
+| 40 | [simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest) | 297 | - | 研究项目 | LLM4Pentest 研究代码 |
+| 41 | [xoxruns/deadend-cli](https://github.com/xoxruns/deadend-cli) ⭐**新补充** | 265 | Python | 渗透 Agent | XBOW 黑盒 81%，约 $122 API 成本，本地化执行 |
+| 42 | [yz9yt/BugTrace-AI](https://github.com/yz9yt/BugTrace-AI) | 251 | TypeScript | 漏洞追踪 | （已归档，演进为 BugTraceAI v2） |
+| 43 | [GitHubSecurityLab/seclab-taskflow-agent](https://github.com/GitHubSecurityLab/seclab-taskflow-agent) ⭐**新补充** | 212 | Python | Agent 框架 | GitHub Security Lab 出品，YAML 驱动多 Agent + CodeQL |
+| 44 | [KHenryAegis/VulnBot](https://github.com/KHenryAegis/VulnBot) | 177 | Python | 渗透 Agent | 多代理协作框架的自主渗透测试 |
+| 45 | [chainreactors/tinyctfer](https://github.com/chainreactors/tinyctfer) | 173 | Python | CTF Agent | antix 微型意图运行时 + 元工具设计 |
+| 46 | [NYU-LLM-CTF/nyuctf_agents](https://github.com/NYU-LLM-CTF/nyuctf_agents) | 151 | Python | CTF Agent | NYU CTF Bench 配套的 D-CIPHER + Baseline |
+| 47 | [antoninoLorenzo/AI-OPS](https://github.com/antoninoLorenzo/AI-OPS) | 143 | Python | 渗透助手 | 基于开源 LLM 的渗透测试 AI 助手 |
+| 48 | [andreashappe/cochise](https://github.com/andreashappe/cochise) | 126 | Python | AD 渗透 Agent | 自主 Assumed Breach AD 渗透（TOSEM 2025）|
+| 49 | [arthurgervais/mapta](https://github.com/arthurgervais/mapta) ⭐**新补充** | 102 | Python | 渗透 Agent | 多 Agent Web 应用安全评估 + 端到端漏洞利用验证（arXiv:2508.20816）|
+| 50 | [vikramrajkumarmajji/AI-VAPT](https://github.com/vikramrajkumarmajji/AI-VAPT) | 100 | TypeScript | VAPT 框架 | 自主 AI 漏洞评估与渗透测试框架 |
+| 51 | [amazon-science/Cyber-Zero](https://github.com/amazon-science/Cyber-Zero) | 99 | Python | 训练框架 | 无运行时训练网络安全代理（Amazon Science） |
+| 52 | [RamKansal/pentestMCP](https://github.com/RamKansal/pentestMCP) | 80 | Python | MCP | 面向渗透测试的 MCP |
+| 53 | [ARESHAmohanad/BugHunter-AI](https://github.com/ARESHAmohanad/BugHunter-AI) | 51 | Python | 渗透 Agent | 赛博朋克风 AI 渗透 Agent，未来感 GUI |
+| 54 | [AI-secure/UDora](https://github.com/AI-secure/UDora) | 37 | Python | LLM 红队 | [ICML 2025] 针对 LLM Agents 的统一红队框架 |
+| 55 | [yashab-cyber/hackbot](https://github.com/yashab-cyber/hackbot) | 30 | Python | 渗透助手 | 生产级 AI 渗透 / 安全助手，三种工作模式 |
+| 56 | [chainreactors/aide-for-pentest](https://github.com/chainreactors/aide-for-pentest) | 23 | Python | 渗透助手 | 智能渗透 Agent 运行时模板（腾讯云黑客松线上第 7）|
 | 57 | [umangkartikey/forge](https://github.com/umangkartikey/forge) | 3 | Python | 自治框架 | 自主 AI 安全框架，自我复制蜂群 |
 
 > 备注：1k–10k 区间的 Star 数为 GitHub 网页缩写值的换算结果；万级以上误差更大。
 > *Note: stars in the 1k–10k range are converted from GitHub's abbreviated values; 10k+ may carry larger errors.*
+
+---
+
+## 🧬 进攻型 / 安全专用开源模型
+*Offensive & Security-Specialized Open-Weight Models*
+
+> 上面的项目多为"Agent 框架 / 脚手架"，其能力最终取决于底层模型。本节盘点可作为 Offensive AI Agent **推理内核**的开源权重模型，分两类：
+> - **A. 无安全对齐 / 弱审查的进攻型模型**：刻意去除或大幅弱化拒答对齐，可直接输出漏洞利用 / 攻击链推理，最适合本地化、无云依赖的红队 Agent 驱动。
+> - **B. 安全领域专用模型（含推理 / 漏洞 / 防御对齐）**：面向安全垂域微调，能力强但**保留了不同程度的安全对齐**，进攻场景常需搭配越狱 / 系统提示或作为漏洞检测内核使用。
+>
+> *These are open-weight models usable as the reasoning core of an offensive AI agent, split into (A) uncensored/weakly-aligned offensive models and (B) security-specialized models that still retain safety alignment.*
+
+### A. 无安全对齐 / 弱审查的进攻型模型
+*Uncensored / Weakly-Aligned Offensive Models*
+
+| # | 模型 | 参数量 | 基座 | 发布方 | 定位与特色 |
+|---|------|-------|------|--------|-----------|
+| 1 | [WhiteRabbitNeo / DeepHat](https://huggingface.co/WhiteRabbitNeo)（[DeepHat-V1-7B](https://ollama.com/DeepHat)、13B、33B、70B）| 7B–70B | Llama / Qwen / DeepSeek | Kindo.ai | 最知名的**无审查红队模型**家族，2025 Black Hat 后更名 DeepHat。面向真实进攻推理、长上下文分析，可映射立足点、串联弱点、探索利用路径 |
+| 2 | [Lily-Cybersecurity-7B-v0.2](https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) | 7B | Mistral-7B | Sego Lily Labs | Mistral 微调，22,000 条手工构造的网络安全 / 黑客问答对，无强拒答对齐，适合本地渗透问答助手 |
+| 3 | [BaronLLM (Offensive Security LLM)](https://huggingface.co/AlicanKiraz0)（[GGUF Q6_K](https://www.aimodels.fyi/models/huggingFace/cybersecurity-baronllm-offensive-security-llm-q6-k-gguf-alicankiraz0)）| 7B/8B 级 | — | AlicanKiraz0 | 专为**进攻性安全研究、对抗模拟、红队**微调的模型，输出偏向 exploit / 攻击链推理 |
+
+> ⚠️ 说明：此类模型刻意弱化安全对齐，可直接产出攻击性内容，**必须严格限定于授权测试 / 隔离环境**（详见文末免责声明）。
+> *These models intentionally weaken safety alignment; use only within authorized, isolated environments.*
+
+### B. 安全领域专用模型（含推理 / 漏洞 / 防御对齐）
+*Security-Specialized Models (Reasoning / VulnDetect / Defense-Aligned)*
+
+| # | 模型 | 参数量 | 基座 | 发布方 | 定位与特色 | 对齐属性 |
+|---|------|-------|------|--------|-----------|---------|
+| 1 | [VulnLLM-R-7B](https://huggingface.co/Mungert/VulnLLM-R-7B-GGUF)（[代码](https://github.com/ucsb-mlsec/VulnLLM-R)）| 7B | Qwen 系 | UCSB-SURFI | **漏洞挖掘推理**模型，逐步推理数据流 / 控制流 / 安全上下文；在 Python/C/C++/Java 上超越 CodeQL、AFL++、Claude-3.7 等（arXiv:2512.07533）| 面向检测，弱进攻对齐 |
+| 2 | [Foundation-Sec-8B-Reasoning](https://huggingface.co/fdtn-ai/Foundation-Sec-8B-Reasoning) | 8B | Llama-3.1-8B | Cisco Foundation AI | "全球首个安全推理模型"，安全垂域指令微调，可本地部署驱动 AI 安全工具（arXiv:2601.21051）| 通用安全，保留对齐 |
+| 3 | [CyberSecQwen-4B](https://huggingface.co/athena129/CyberSecQwen-4B) | 4B | Qwen3-4B-Instruct | AMD Hackathon / athena129 | 轻量**防御性**安全模型，专攻 CVE→CWE 映射（CTI-RCM）与威胁情报选择题（CTI-MCQ），4B 却超 8B 基座 | 明确防御导向 |
+| 4 | [Meta-SecAlign-8B](https://huggingface.co/facebook/Meta-SecAlign-8B)（[70B](https://github.com/facebookresearch/Meta_SecAlign)）| 8B / 70B | Llama-3.1 | Meta (FAIR) | 首个**内建 prompt injection 防御**的全开源商用级 LLM（arXiv:2507.02735）；本质是**防御对齐标杆**，可作红队攻防的"蓝方"陪练 | 强防御对齐（非进攻）|
+
+> 甄别提示：**VulnLLM-R / Foundation-Sec / CyberSecQwen / Meta-SecAlign 均非"无对齐进攻模型"**——它们分别偏漏洞检测、安全推理、防御问答与抗注入防御。真正"无安全对齐、适合直接进攻"的是 A 类（WhiteRabbitNeo/DeepHat、Lily、BaronLLM）。将它们并列收录，是为了呈现"进攻内核 vs 安全垂域 / 防御对齐"的完整光谱，便于选型时对症下药。
+> *Selection note: only Group A models are genuinely uncensored/offensive; Group B are vuln-detection, reasoning, or defense-aligned models included for a complete spectrum.*
 
 ---
 
@@ -108,136 +144,110 @@
 | 6 | 42-b3yond-6ug | **BugBuster** | — | [42-b3yond-6ug/42-b3yond-6ug-crs](https://github.com/42-b3yond-6ug/42-b3yond-6ug-crs) |
 | 7 | Lacrosse (SIFT) | **Lacrosse CRS** | — | [siftech/afc-crs-lacrosse](https://github.com/siftech/afc-crs-lacrosse) |
 
-## 🏆 TCH - 腾讯云智能渗透黑客松2025-2026
-*Tencent Cloud Intelligent Penetration Agent Hackathon*
-> 腾讯云智能渗透黑客松由腾讯云鼎实验室主办，是国内 **首个聚焦 LLM 智能体全流程自动化渗透** 的顶级专业赛事。赛事已连续成功举办两届，持续引领「AI + 安全」前沿技术探索与高端安全人才培养方向。赛事秉持 **铸刃止戈、以智御危** 理念，深度推动大模型与网络安全场景融合创新，探索智能渗透技术落地实践路径，同时面向产学研各界搭建高端 AI 安全竞技舞台，为行业持续输送顶尖 AI 安全实战人才。
-> ###### _Tencent Cloud Intelligent Penetration Hackathon, hosted by Tencent Cloud Yunding Lab, is China’s first top-tier professional competition focusing on full-process automated penetration based on LLM agents.Successfully held for two consecutive sessions, the event keeps spearheading cutting-edge exploration in AI + cybersecurity and the cultivation of high-end security talents.Upholding the philosophy of Forging Blades to Defend Threats, Guarding Risks with Intelligence, the competition deeply drives the integrated innovation of large models and cybersecurity scenarios, and explores the practical implementation path of intelligent penetration technologies.It also builds a high-end AI security arena for industry, academia and research communities, continuously delivering top practical AI security talents to the industry._
-
-- **赛事首页**：[https://zc.tencent.com/hackathon](https://zc.tencent.com/hackathon)
-- **比赛平台**：[https://challenge.zc.tencent.com](https://challenge.zc.tencent.com/)
-- **智能体社交论坛**：[https://nullzone.zc.tencent.com/feed](https://nullzone.zc.tencent.com/feed)
-- **答辩视频列表**：[https://space.bilibili.com/3690981341792399/lists/5042715?type=series](https://space.bilibili.com/3690981341792399/lists/5042715?type=series)
-
-### 🔥两届赛事高Star作品 
-- **第一届CyberStrikeAI（4.1k）**：[https://github.com/Ed1s0nZ/CyberStrikeAI](https://github.com/Ed1s0nZ/CyberStrikeAI)
-- **第二届Cairn（1.5k）**：[https://github.com/oritera/Cairn](https://github.com/oritera/Cairn)
-- **第一届LuaN1ao鸾鸟（1k）**：[https://github.com/SanMuzZzZz/LuaN1aoAgent](https://github.com/SanMuzZzZz/LuaN1aoAgent)
-
----
-
-## 📚 Awesome List 资源汇编
-*Awesome List Collection*
-
-> 本节汇总专门收录 Offensive AI / AI 安全相关精选资源的 Awesome List 仓库，本文档大量内容来自这几个 list 的交叉合并。
-> *This section gathers Awesome List–style repositories. This document is largely derived from cross-merging the following lists.*
-
-| # | 仓库 | Stars | 维护者 | 内容定位 |
-|---|------|-------|--------|---------|
-| 1 | [jiep/offensive-ai-compilation](https://github.com/jiep/offensive-ai-compilation) | 1.4k | jiep | 攻击性 AI 综合资源（对抗 ML / 渗透 / 钓鱼 / 生成式 AI 滥用） |
-| 2 | [ottosulin/awesome-ai-security](https://github.com/ottosulin/awesome-ai-security) | 1.0k | ottosulin | 通用 AI 安全资源集合（攻防兼顾） |
-| 3 | [TalEliyahu/Awesome-AI-Security](https://github.com/TalEliyahu/Awesome-AI-Security) | 714 | TalEliyahu | 偏 AI 系统防御侧的资源、研究与工具 |
-| 4 | [EvanThomasLuke/Awesome-AI-Hacking-Agents](https://github.com/EvanThomasLuke/Awesome-AI-Hacking-Agents) ⭐**新补充** | 258 | EvanThomasLuke | AI Hacking Agent 全景 + AIxCC 决赛队伍 + 商业产品 + 论文 |
-| 5 | [gmh5225/awesome-ai-security](https://github.com/gmh5225/awesome-ai-security) | 21 | gmh5225 | 面向渗透测试者 / 漏洞猎人 / 安全研究的 AI 安全精选 |
-| 6 | [ox01024/awesome-offensive-security-ai](https://github.com/ox01024/awesome-offensive-security-ai) ⭐**新补充** | 22 | ox01024 | 偏 Benchmark + 评估 / 竞赛 / 学术资源（含中英双语 README）|
-
 ---
 
 ## 📑 相关学术论文
 *Related Academic Papers (grouped by topic; within each group, newest first)*
 
-> 在原有基础上，融合了 [tmylla/Awesome-LLM4Cybersecurity](https://github.com/tmylla/Awesome-LLM4Cybersecurity/blob/main/LITERATURES.md) 中渗透测试、进攻 AI、漏洞挖掘相关章节。共收录 **55 篇**代表性论文，按主题拆为 3 个子表：
+> 在原有基础上，融合了 [tmylla/Awesome-LLM4Cybersecurity](https://github.com/tmylla/Awesome-LLM4Cybersecurity/blob/main/LITERATURES.md) 中渗透测试、进攻 AI、漏洞挖掘相关章节。共收录 **73 篇**代表性论文，按主题拆为 3 个子表：
 > - **A. 渗透测试 & 红队 Agent**
 > - **B. 漏洞挖掘 / 利用 / 修复**
 > - **C. 评测基准 & 训练方法 & 奠基论文**
 >
-> 时间以 arXiv v1 提交日期为准；ⓝ 表示本次新补充。
+> 时间以 arXiv v1 提交日期为准；🆕 表示 2026-07 本轮新增，ⓝ 为往轮补充。
 >
-> *Three sub-tables: (A) Pentesting & Red-Team Agents · (B) Vulnerability Discovery / Exploitation / Repair · (C) Evaluation, Training & Foundational. ⓝ marks newly added in this round.*
+> *Three sub-tables: (A) Pentesting & Red-Team Agents · (B) Vulnerability Discovery / Exploitation / Repair · (C) Evaluation, Training & Foundational. 🆕 = added this round (2026-07); ⓝ = added in earlier rounds.*
 
 ### A. 渗透测试 & 红队 Agent
 *Pentesting & Red-Team Agents*
 
 | # | 时间 | 论文 | 作者 / 机构 | 发表渠道 | 关联项目 / 主题 |
 |---|------|------|-----------|---------|---------------|
-| A1 | 2026-01 | [PenForge: On-the-Fly Expert Agent Construction for Automated Penetration Testing](https://arxiv.org/abs/2601.06910) ⓝ | — | arXiv | 动态构造领域专家 Agent |
-| A2 | 2025-12 | [PentestEval: Benchmarking LLM-based Penetration Testing with Modular and Stage-Level Design](https://arxiv.org/abs/2512.14233) ⓝ | — | arXiv | 模块化 / 阶段化渗透测试评估 |
-| A3 | 2025-12 | [Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing](https://arxiv.org/abs/2512.09882) ⓝ | — | arXiv | AI Agent vs 人类渗透测试师 |
-| A4 | 2025-10 | [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](https://arxiv.org/abs/2510.05605) ⓝ | — | arXiv | 通用自动化渗透 Agent |
-| A5 | 2025-09 | [xOffense: Autonomous Penetration Testing with Offensive Knowledge-enhanced LLMs and Multi-Agent Systems](https://arxiv.org/abs/2509.13021) | Luong, Bao et al. | arXiv | 微调 Qwen3-32B 多 Agent |
-| A6 | 2025-09 | [Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees](https://arxiv.org/abs/2509.07939) ⓝ | — | arXiv | 攻击树结构化推理 |
-| A7 | 2025-08 | [MAPTA: Multi-Agent Web Application Security Assessment](https://arxiv.org/abs/2508.20816) | Arthur Gervais 等 | arXiv | [arthurgervais/mapta](https://github.com/arthurgervais/mapta) |
-| A8 | 2025-08 | [Pentest-R1: Towards Autonomous Penetration Testing Reasoning Optimized via Two-Stage RL](https://arxiv.org/abs/2508.07382) ⓝ | — | arXiv | 两阶段强化学习渗透推理 |
-| A9 | 2025-07 | [PenTest2.0: Towards Autonomous Privilege Escalation Using GenAI](https://arxiv.org/abs/2507.06742) ⓝ | — | arXiv | 自主提权 |
-| A10 | 2025-07 | [On the Surprising Efficacy of LLMs for Penetration-Testing](https://arxiv.org/abs/2507.00829) ⓝ | — | arXiv | LLM 渗透有效性实证 |
-| A11 | 2025-05 | [AutoPentest: Enhancing Vulnerability Management With Autonomous LLM Agents](https://arxiv.org/abs/2505.10321) ⓝ | — | arXiv | 漏洞管理 Agent |
-| A12 | 2025-05 | [RedTeamLLM: an Agentic AI framework for offensive security](https://arxiv.org/abs/2505.06913) | LRE Security Systems Team | arXiv | 含错误恢复机制 |
-| A13 | 2025-04 | [CAI: An Open, Bug Bounty-Ready Cybersecurity AI](https://arxiv.org/abs/2504.06017) ⓝ | aliasrobotics | arXiv | [aliasrobotics/cai](https://github.com/aliasrobotics/cai) |
-| A14 | 2025-02 | [Construction and Evaluation of LLM-based Agents for Semi-Autonomous Penetration Testing](https://arxiv.org/abs/2502.15506) ⓝ | — | arXiv | 半自主渗透 Agent 构造与评估 |
-| A15 | 2025-02 | [RapidPen: Fully Automated IP-to-Shell Penetration Testing with LLM-based Agents](https://arxiv.org/abs/2502.16730) ⓝ | — | arXiv | IP → Shell 全自动渗透 |
-| A16 | 2025-02 | [PenTest++: Elevating Ethical Hacking with AI and Automation](https://arxiv.org/abs/2502.09484) ⓝ | — | arXiv | 道德黑客 AI 自动化升级 |
-| A17 | 2025-02 | [Can LLMs Hack Enterprise Networks? Autonomous Assumed Breach Penetration-Testing AD](https://arxiv.org/abs/2502.04227) | Andreas Happe, Jürgen Cito | ACM TOSEM 2025 | [andreashappe/cochise](https://github.com/andreashappe/cochise) |
-| A18 | 2025-02 | [D-CIPHER: Dynamic Collaborative Intelligent Multi-Agent System for CTF](https://arxiv.org/abs/2502.10931) | NYU LLM CTF Team | arXiv | [NYU-LLM-CTF/nyuctf_agents](https://github.com/NYU-LLM-CTF/nyuctf_agents) |
-| A19 | 2025-01 | [Incalmo: An Autonomous LLM-assisted System for Red Teaming Multi-Host Networks](https://arxiv.org/abs/2501.16466) | Singer, Ben et al. | arXiv | 多主机企业红队 |
-| A20 | 2025-01 | [VulnBot: Autonomous Penetration Testing for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2501.13411) | KHenryAegis 等 | arXiv | [KHenryAegis/VulnBot](https://github.com/KHenryAegis/VulnBot) |
-| A21 | 2024-12 | [HackSynth: LLM Agent and Evaluation Framework for Autonomous Penetration Testing](https://arxiv.org/abs/2412.01778) | Lajos Muzsai et al. (ELTE) | arXiv | [aielte-research/HackSynth](https://github.com/aielte-research/HackSynth) |
-| A22 | 2024-12 | [Hacking CTFs with Plain Agents](https://arxiv.org/abs/2412.02776) ⓝ | — | arXiv | 朴素 Agent + 简单脚手架打 CTF |
-| A23 | 2024-11 | [PentestAgent: Incorporating LLM Agents to Automated Penetration Testing](https://arxiv.org/abs/2411.05185) | Xiangmin Shen et al. | ASIA CCS 2025 | [GH05TCREW/pentestagent](https://github.com/GH05TCREW/pentestagent) |
-| A24 | 2024-11 | [AutoPT: How Far Are We from the End2End Automated Web Penetration Testing?](https://arxiv.org/abs/2411.01236) ⓝ | — | arXiv | 端到端 Web 渗透 |
-| A25 | 2024-09 | [BreachSeek: A Multi-Agent Automated Penetration Tester](https://arxiv.org/abs/2409.03789) | Ibrahim Alshehri et al. | arXiv | 多 Agent 渗透 |
-| A26 | 2024-09 | [Hacking, The Lazy Way: LLM Augmented Pentesting](https://arxiv.org/abs/2409.09493) ⓝ | — | arXiv | "懒人"式 LLM 增强渗透 |
-| A27 | 2024-09 | [EnIGMA: Interactive Tools Substantially Assist LM Agents in Finding Security Vulnerabilities](https://arxiv.org/abs/2409.16165) | Talor Abramovich et al. (Princeton/NYU) | ICML 2025 | CTF 自主求解 LM Agent |
-| A28 | 2024-08 | [CIPHER: Cybersecurity Intelligent Penetration-testing Helper for Ethical Researcher](https://arxiv.org/abs/2408.11650) ⓝ | — | Sensors 2024 | 道德渗透助手 |
-| A29 | 2024-07 | [PenHeal: A Two-Stage LLM Framework for Automated Pentesting and Optimal Remediation](https://arxiv.org/abs/2407.17788) ⓝ | — | ACSW 2024 | 两阶段：渗透 + 修复 |
-| A30 | 2024-07 | [From Sands to Mansions: Enabling Automatic Full-Life-Cycle Cyberattack Construction with LLM](https://arxiv.org/abs/2407.16928) ⓝ | — | arXiv | 全生命周期攻击构造 |
-| A31 | 2024-03 | [AutoAttacker: A Large Language Model Guided System to Implement Automatic Cyber-attacks](https://arxiv.org/abs/2403.01038) | Jiacen Xu et al. (UC Irvine) | arXiv | 后渗透阶段 LLM 自动化攻击 |
-| A32 | 2023-08 | [PentestGPT: An LLM-empowered Automatic Penetration Testing Tool](https://arxiv.org/abs/2308.06782) | Gelei Deng et al. (NTU) | USENIX Security 2024 | [GreyDGL/PentestGPT](https://github.com/GreyDGL/PentestGPT) |
-| A33 | 2023-08 | [Getting pwn'd by AI: Penetration Testing with Large Language Models](https://arxiv.org/abs/2308.00121) | Andreas Happe, Jürgen Cito (TU Wien) | ESEC/FSE 2023 | 奠基论文，hackingBuddyGPT 前身 |
+| A1 | 2026-07 | [A Survey of LLM-Driven Penetration Testing: From Foundations to Agents4Pentest](https://arxiv.org/abs/2607.02605) 🆕 | — | arXiv | LLM 渗透测试系统综述，提出 Agents4Pentest 概念 |
+| A2 | 2026-06 | [ZERO-APT: A Closed-Loop Adversarial Framework for LLM Penetration Agents](https://arxiv.org/abs/2606.05567) 🆕 | Zheng, Zhu et al. | arXiv | 攻击者-防御者-裁判回合制闭环，含智能防御压力 |
+| A3 | 2026-04 | [Hackers or Hallucinators? A Comprehensive Analysis of LLM-Based Automated Penetration Testing](https://arxiv.org/abs/2604.05719) 🆕 | — | arXiv | [simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest) |
+| A4 | 2026-01 | [PenForge: On-the-Fly Expert Agent Construction for Automated Penetration Testing](https://arxiv.org/abs/2601.06910) ⓝ | — | arXiv | 动态构造领域专家 Agent |
+| A5 | 2025-12 | [PentestEval: Benchmarking LLM-based Penetration Testing with Modular and Stage-Level Design](https://arxiv.org/abs/2512.14233) ⓝ | — | arXiv | 模块化 / 阶段化渗透测试评估 |
+| A6 | 2025-12 | [Comparing AI Agents to Cybersecurity Professionals in Real-World Penetration Testing](https://arxiv.org/abs/2512.09882) ⓝ | — | arXiv | AI Agent vs 人类渗透测试师 |
+| A7 | 2025-10 | [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](https://arxiv.org/abs/2510.05605) ⓝ | — | arXiv | 通用自动化渗透 Agent |
+| A8 | 2025-09 | [xOffense: Autonomous Penetration Testing with Offensive Knowledge-enhanced LLMs and Multi-Agent Systems](https://arxiv.org/abs/2509.13021) | Luong, Bao et al. | arXiv | 微调 Qwen3-32B 多 Agent |
+| A9 | 2025-09 | [Guided Reasoning in LLM-Driven Penetration Testing Using Structured Attack Trees](https://arxiv.org/abs/2509.07939) ⓝ | — | arXiv | 攻击树结构化推理 |
+| A10 | 2025-08 | [CurriculumPT: LLM-Based Multi-Agent Autonomous Penetration Testing with Curriculum-Guided Learning](https://www.mdpi.com/2076-3417/15/16/9096) 🆕 | — | Applied Sciences 2025 | 课程式学习引导的多 Agent 渗透 |
+| A11 | 2025-08 | [MAPTA: Multi-Agent Web Application Security Assessment](https://arxiv.org/abs/2508.20816) | Arthur Gervais 等 | arXiv | [arthurgervais/mapta](https://github.com/arthurgervais/mapta) |
+| A12 | 2025-08 | [Pentest-R1: Towards Autonomous Penetration Testing Reasoning Optimized via Two-Stage RL](https://arxiv.org/abs/2508.07382) ⓝ | — | arXiv | 两阶段强化学习渗透推理 |
+| A13 | 2025-07 | [PenTest2.0: Towards Autonomous Privilege Escalation Using GenAI](https://arxiv.org/abs/2507.06742) ⓝ | — | arXiv | 自主提权 |
+| A14 | 2025-07 | [On the Surprising Efficacy of LLMs for Penetration-Testing](https://arxiv.org/abs/2507.00829) ⓝ | — | arXiv | LLM 渗透有效性实证 |
+| A15 | 2025-05 | [AutoPentest: Enhancing Vulnerability Management With Autonomous LLM Agents](https://arxiv.org/abs/2505.10321) ⓝ | — | arXiv | 漏洞管理 Agent |
+| A16 | 2025-05 | [RedTeamLLM: an Agentic AI framework for offensive security](https://arxiv.org/abs/2505.06913) | LRE Security Systems Team | arXiv | 含错误恢复机制 |
+| A17 | 2025-04 | [CAI: An Open, Bug Bounty-Ready Cybersecurity AI](https://arxiv.org/abs/2504.06017) ⓝ | aliasrobotics | arXiv | [aliasrobotics/cai](https://github.com/aliasrobotics/cai) |
+| A18 | 2025-02 | [Construction and Evaluation of LLM-based Agents for Semi-Autonomous Penetration Testing](https://arxiv.org/abs/2502.15506) ⓝ | — | arXiv | 半自主渗透 Agent 构造与评估 |
+| A19 | 2025-02 | [RapidPen: Fully Automated IP-to-Shell Penetration Testing with LLM-based Agents](https://arxiv.org/abs/2502.16730) ⓝ | — | arXiv | IP → Shell 全自动渗透 |
+| A20 | 2025-02 | [PenTest++: Elevating Ethical Hacking with AI and Automation](https://arxiv.org/abs/2502.09484) ⓝ | — | arXiv | 道德黑客 AI 自动化升级 |
+| A21 | 2025-02 | [Can LLMs Hack Enterprise Networks? Autonomous Assumed Breach Penetration-Testing AD](https://arxiv.org/abs/2502.04227) | Andreas Happe, Jürgen Cito | ACM TOSEM 2025 | [andreashappe/cochise](https://github.com/andreashappe/cochise) |
+| A22 | 2025-02 | [D-CIPHER: Dynamic Collaborative Intelligent Multi-Agent System for CTF](https://arxiv.org/abs/2502.10931) | NYU LLM CTF Team | arXiv | [NYU-LLM-CTF/nyuctf_agents](https://github.com/NYU-LLM-CTF/nyuctf_agents) |
+| A23 | 2025-01 | [Incalmo: An Autonomous LLM-assisted System for Red Teaming Multi-Host Networks](https://arxiv.org/abs/2501.16466) | Singer, Ben et al. | arXiv | 多主机企业红队 |
+| A24 | 2025-01 | [VulnBot: Autonomous Penetration Testing for A Multi-Agent Collaborative Framework](https://arxiv.org/abs/2501.13411) | KHenryAegis 等 | arXiv | [KHenryAegis/VulnBot](https://github.com/KHenryAegis/VulnBot) |
+| A25 | 2024-12 | [HackSynth: LLM Agent and Evaluation Framework for Autonomous Penetration Testing](https://arxiv.org/abs/2412.01778) | Lajos Muzsai et al. (ELTE) | arXiv | [aielte-research/HackSynth](https://github.com/aielte-research/HackSynth) |
+| A26 | 2024-12 | [Hacking CTFs with Plain Agents](https://arxiv.org/abs/2412.02776) ⓝ | — | arXiv | 朴素 Agent + 简单脚手架打 CTF |
+| A27 | 2024-11 | [PentestAgent: Incorporating LLM Agents to Automated Penetration Testing](https://arxiv.org/abs/2411.05185) | Xiangmin Shen et al. | ASIA CCS 2025 | [GH05TCREW/pentestagent](https://github.com/GH05TCREW/pentestagent) |
+| A28 | 2024-11 | [AutoPT: How Far Are We from the End2End Automated Web Penetration Testing?](https://arxiv.org/abs/2411.01236) ⓝ | — | arXiv | 端到端 Web 渗透 |
+| A29 | 2024-09 | [BreachSeek: A Multi-Agent Automated Penetration Tester](https://arxiv.org/abs/2409.03789) | Ibrahim Alshehri et al. | arXiv | 多 Agent 渗透 |
+| A30 | 2024-09 | [Hacking, The Lazy Way: LLM Augmented Pentesting](https://arxiv.org/abs/2409.09493) ⓝ | — | arXiv | "懒人"式 LLM 增强渗透 |
+| A31 | 2024-09 | [EnIGMA: Interactive Tools Substantially Assist LM Agents in Finding Security Vulnerabilities](https://arxiv.org/abs/2409.16165) | Talor Abramovich et al. (Princeton/NYU) | ICML 2025 | CTF 自主求解 LM Agent |
+| A32 | 2024-08 | [CIPHER: Cybersecurity Intelligent Penetration-testing Helper for Ethical Researcher](https://arxiv.org/abs/2408.11650) ⓝ | — | Sensors 2024 | 道德渗透助手 |
+| A33 | 2024-07 | [PenHeal: A Two-Stage LLM Framework for Automated Pentesting and Optimal Remediation](https://arxiv.org/abs/2407.17788) ⓝ | — | ACSW 2024 | 两阶段：渗透 + 修复 |
+| A34 | 2024-07 | [From Sands to Mansions: Enabling Automatic Full-Life-Cycle Cyberattack Construction with LLM](https://arxiv.org/abs/2407.16928) ⓝ | — | arXiv | 全生命周期攻击构造 |
+| A35 | 2024-03 | [AutoAttacker: A Large Language Model Guided System to Implement Automatic Cyber-attacks](https://arxiv.org/abs/2403.01038) | Jiacen Xu et al. (UC Irvine) | arXiv | 后渗透阶段 LLM 自动化攻击 |
+| A36 | 2023-08 | [PentestGPT: An LLM-empowered Automatic Penetration Testing Tool](https://arxiv.org/abs/2308.06782) | Gelei Deng et al. (NTU) | USENIX Security 2024 | [GreyDGL/PentestGPT](https://github.com/GreyDGL/PentestGPT) |
+| A37 | 2023-08 | [Getting pwn'd by AI: Penetration Testing with Large Language Models](https://arxiv.org/abs/2308.00121) | Andreas Happe, Jürgen Cito (TU Wien) | ESEC/FSE 2023 | 奠基论文，hackingBuddyGPT 前身 |
 
 ### B. 漏洞挖掘 / 利用 / 修复
 *Vulnerability Discovery / Exploitation / Repair*
 
 | # | 时间 | 论文 | 作者 / 机构 | 发表渠道 | 关联项目 / 主题 |
 |---|------|------|-----------|---------|---------------|
-| B1 | 2025-10 | [LLM Agents for Automated Web Vulnerability Reproduction: Are We There Yet?](https://arxiv.org/abs/2510.14700) ⓝ | — | arXiv | Web 漏洞自动复现实证 |
-| B2 | 2025-09 | [VulnRepairEval: An Exploit-Based Evaluation Framework for Assessing LLM Vulnerability Repair](https://arxiv.org/abs/2509.03331) ⓝ | — | arXiv | 基于 exploit 的修复评测 |
-| B3 | 2025-09 | [Synergizing Static Analysis with Large Language Models for Vulnerability Discovery and beyond](https://arxiv.org/abs/2509.15433) ⓝ | — | arXiv | SAST + LLM 协同 |
-| B4 | 2025-09 | [ATLANTIS: AI-driven Threat Localization, Analysis, and Triage Intelligence System](https://arxiv.org/abs/2509.14589) ⓝ | Team Atlanta | arXiv | AIxCC 决赛冠军 CRS 论文 |
-| B5 | 2025-09 | [All You Need Is A Fuzzing Brain: An LLM-Powered System for Automated Vulnerability Detection and Patching](https://arxiv.org/abs/2509.07225) ⓝ | — | arXiv | AIxCC 决赛 4 队系统论文 |
-| B6 | 2025-08 | [Prompt to Pwn: Automated Exploit Generation for Smart Contracts](https://arxiv.org/abs/2508.01371) ⓝ | — | arXiv | 智能合约自动 Exploit 生成 |
-| B7 | 2025-07 | [LLMxCPG: Context-Aware Vulnerability Detection Through Code Property Graph-Guided LLMs](https://arxiv.org/abs/2507.16585) ⓝ | — | USENIX Security 2025 | CPG 引导的上下文感知漏洞检测 |
-| B8 | 2025-07 | [MalCodeAI: Autonomous Vulnerability Detection and Remediation via Language Agnostic Code Reasoning](https://arxiv.org/abs/2507.10898) ⓝ | — | arXiv | 跨语言自治漏洞检测 + 修复 |
-| B9 | 2025-05 | [VADER: A Human-Evaluated Benchmark for Vulnerability Assessment, Detection, Explanation, and Remediation](https://arxiv.org/abs/2505.19395) ⓝ | — | arXiv | 漏洞评估 / 解释 / 修复人评基准 |
-| B10 | 2025-04 | [PwnGPT: Automatic Exploit Generation Based on Large Language Models](https://aclanthology.org/2025.acl-long.562.pdf) ⓝ | — | ACL 2025 | 自动 Exploit 生成 |
-| B11 | 2025-03 | [CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Vulnerabilities](https://arxiv.org/abs/2503.17332) | UIUC Kang Lab | ICML 2025 | [uiuc-kang-lab/cve-bench](https://github.com/uiuc-kang-lab/cve-bench) |
-| B12 | 2025-03 | [CVE-Bench (NAACL): Benchmarking LLM-based Software Engineering Agent's Ability to Repair Real-World CVE Vulnerabilities](https://aclanthology.org/2025.naacl-long.212/) ⓝ | — | NAACL 2025 | 真实 CVE 修复评测（注：与 ICML 版同名不同任务）|
-| B13 | 2025-03 | [CASTLE: Benchmarking Dataset for Static Code Analyzers and LLMs towards CWE Detection](https://arxiv.org/abs/2503.09433) ⓝ | — | arXiv | CWE 检测基准 |
-| B14 | 2024-12 | [AI Cyber Risk Benchmark: Automated Exploitation Capabilities](https://arxiv.org/abs/2410.21939) ⓝ | — | arXiv | 自动化漏洞利用能力基准 |
-| B15 | 2024-07 | [eyeballvul: a future-proof benchmark for vulnerability detection in the wild](https://arxiv.org/abs/2407.08708) ⓝ | — | arXiv | 防训练泄漏的漏洞检测基准 |
-| B16 | 2024-06 | [Teams of LLM Agents can Exploit Zero-Day Vulnerabilities](https://arxiv.org/abs/2406.01637) | Richard Fang et al. (UIUC) | arXiv | 多 Agent 协作 0day 利用 |
-| B17 | 2024-04 | [LLM Agents can Autonomously Exploit One-day Vulnerabilities](https://arxiv.org/abs/2404.08144) | Richard Fang et al. (UIUC) | arXiv | 已知 CVE 报告 → 自动利用 |
-| B18 | 2024-02 | [LLM Agents can Autonomously Hack Websites](https://arxiv.org/abs/2402.06664) | Richard Fang et al. (UIUC) | arXiv | LLM Agent 自主攻击网站（早期工作）|
+| B1 | 2026-05 | [FuzzingBrain V2: A Multi-Agent LLM System for Automated Vulnerability Discovery and Reproduction](https://arxiv.org/abs/2605.21779) 🆕 | — | arXiv | 构建于 OSS-Fuzz，实战挖出 29 个 0day（2 个获 CVE）|
+| B2 | 2025-10 | [LLM Agents for Automated Web Vulnerability Reproduction: Are We There Yet?](https://arxiv.org/abs/2510.14700) ⓝ | — | arXiv | Web 漏洞自动复现实证 |
+| B3 | 2025-09 | [VulnRepairEval: An Exploit-Based Evaluation Framework for Assessing LLM Vulnerability Repair](https://arxiv.org/abs/2509.03331) ⓝ | — | arXiv | 基于 exploit 的修复评测 |
+| B4 | 2025-09 | [Synergizing Static Analysis with Large Language Models for Vulnerability Discovery and beyond](https://arxiv.org/abs/2509.15433) ⓝ | — | arXiv | SAST + LLM 协同 |
+| B5 | 2025-09 | [ATLANTIS: AI-driven Threat Localization, Analysis, and Triage Intelligence System](https://arxiv.org/abs/2509.14589) ⓝ | Team Atlanta | arXiv | AIxCC 决赛冠军 CRS 论文 |
+| B6 | 2025-09 | [All You Need Is A Fuzzing Brain: An LLM-Powered System for Automated Vulnerability Detection and Patching](https://arxiv.org/abs/2509.07225) ⓝ | — | arXiv | AIxCC 决赛 4 队系统论文（FuzzingBrain V1）|
+| B7 | 2025-08 | [Prompt to Pwn: Automated Exploit Generation for Smart Contracts](https://arxiv.org/abs/2508.01371) ⓝ | — | arXiv | 智能合约自动 Exploit 生成 |
+| B8 | 2025-07 | [LLMxCPG: Context-Aware Vulnerability Detection Through Code Property Graph-Guided LLMs](https://arxiv.org/abs/2507.16585) ⓝ | — | USENIX Security 2025 | CPG 引导的上下文感知漏洞检测 |
+| B9 | 2025-07 | [MalCodeAI: Autonomous Vulnerability Detection and Remediation via Language Agnostic Code Reasoning](https://arxiv.org/abs/2507.10898) ⓝ | — | arXiv | 跨语言自治漏洞检测 + 修复 |
+| B10 | 2025-05 | [VADER: A Human-Evaluated Benchmark for Vulnerability Assessment, Detection, Explanation, and Remediation](https://arxiv.org/abs/2505.19395) ⓝ | — | arXiv | 漏洞评估 / 解释 / 修复人评基准 |
+| B11 | 2025-04 | [PwnGPT: Automatic Exploit Generation Based on Large Language Models](https://aclanthology.org/2025.acl-long.562.pdf) ⓝ | — | ACL 2025 | 自动 Exploit 生成 |
+| B12 | 2025-03 | [CVE-Bench: A Benchmark for AI Agents' Ability to Exploit Real-World Vulnerabilities](https://arxiv.org/abs/2503.17332) | UIUC Kang Lab | ICML 2025 | [uiuc-kang-lab/cve-bench](https://github.com/uiuc-kang-lab/cve-bench) |
+| B13 | 2025-03 | [CVE-Bench (NAACL): Benchmarking LLM-based Software Engineering Agent's Ability to Repair Real-World CVE Vulnerabilities](https://aclanthology.org/2025.naacl-long.212/) ⓝ | — | NAACL 2025 | 真实 CVE 修复评测（注：与 ICML 版同名不同任务）|
+| B14 | 2025-03 | [CASTLE: Benchmarking Dataset for Static Code Analyzers and LLMs towards CWE Detection](https://arxiv.org/abs/2503.09433) ⓝ | — | arXiv | CWE 检测基准 |
+| B15 | 2024-12 | [AI Cyber Risk Benchmark: Automated Exploitation Capabilities](https://arxiv.org/abs/2410.21939) ⓝ | — | arXiv | 自动化漏洞利用能力基准 |
+| B16 | 2024-07 | [eyeballvul: a future-proof benchmark for vulnerability detection in the wild](https://arxiv.org/abs/2407.08708) ⓝ | — | arXiv | 防训练泄漏的漏洞检测基准 |
+| B17 | 2024-06 | [Teams of LLM Agents can Exploit Zero-Day Vulnerabilities](https://arxiv.org/abs/2406.01637) | Richard Fang et al. (UIUC) | arXiv | 多 Agent 协作 0day 利用 |
+| B18 | 2024-04 | [LLM Agents can Autonomously Exploit One-day Vulnerabilities](https://arxiv.org/abs/2404.08144) | Richard Fang et al. (UIUC) | arXiv | 已知 CVE 报告 → 自动利用 |
+| B19 | 2024-02 | [LLM Agents can Autonomously Hack Websites](https://arxiv.org/abs/2402.06664) | Richard Fang et al. (UIUC) | arXiv | LLM Agent 自主攻击网站（早期工作）|
 
 ### C. 评测基准 & 训练方法 & 综述 & 奠基
 *Evaluation Benchmarks, Training Methods, Surveys & Foundational*
 
 | # | 时间 | 论文 | 作者 / 机构 | 发表渠道 | 关联项目 / 主题 |
 |---|------|------|-----------|---------|---------------|
-| C1 | 2025-10 | [PACEbench: A Framework for Evaluating Practical AI Cyber-Exploitation Capabilities](https://arxiv.org/abs/2510.11688) ⓝ | — | arXiv | 实战 AI 网络利用能力评测 |
-| C2 | 2025-08 | [Towards Effective Offensive Security LLM Agents (CTFTiny + CTFJudge)](https://arxiv.org/abs/2508.05674) | Shao, Rani et al. | AAAI 2026 | CTFTiny / CTFJudge |
-| C3 | 2025-07 | [Cyber-Zero: Training Cybersecurity Agents without Runtime](https://arxiv.org/abs/2508.00910) | Terry Yue Zhuo et al. (Amazon AGI / Monash) | arXiv | [amazon-science/Cyber-Zero](https://github.com/amazon-science/Cyber-Zero) |
-| C4 | 2025-06 | [CyberGym: Evaluating AI Agents on Real-World Vulnerability Analysis](https://arxiv.org/abs/2506.02548) | Zhun Wang et al. (UC Berkeley Sunblaze) | ICLR 2026 | [sunblaze-ucb/cybergym](https://github.com/sunblaze-ucb/cybergym) |
-| C5 | 2025-06 | [SEC-bench: Automated Benchmarking of LLM Agents on Real-World Software Security Tasks](https://arxiv.org/abs/2506.11791) | SEC-bench Team | NeurIPS 2025 | [SEC-bench/SEC-bench](https://github.com/SEC-bench/SEC-bench) |
-| C6 | 2025-06 | [UDora: A Unified Red Teaming Framework against LLM Agents](https://arxiv.org/abs/2503.01908) | AI-secure 团队 | ICML 2025 | [AI-secure/UDora](https://github.com/AI-secure/UDora) |
-| C7 | 2025-04 | [Benchmarking Practices in LLM-driven Offensive Security: Testbeds, Metrics, and Experiment Design](https://arxiv.org/abs/2504.10112) ⓝ | — | arXiv | LLM 进攻安全评测方法学 |
-| C8 | 2025-02 | [OCCULT: Evaluating Large Language Models for Offensive Cyber Operation Capabilities](https://arxiv.org/abs/2502.15797) ⓝ | — | arXiv | 进攻性网络作战能力评测 |
-| C9 | 2024-10 | [AutoPenBench: Benchmarking Generative Agents for Penetration Testing](https://arxiv.org/abs/2410.03225) | Luca Gioacchini et al. (Politecnico di Torino) | EMNLP Industry 2025 | [lucagioacchini/auto-pen-bench](https://github.com/lucagioacchini/auto-pen-bench) |
-| C10 | 2024-10 | [Towards Automated Penetration Testing: Introducing LLM Benchmark, Analysis, and Improvements](https://arxiv.org/abs/2410.17141) ⓝ | — | arXiv | 渗透测试 LLM 基准 + 改进 |
-| C11 | 2024-08 | [CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in LLMs](https://arxiv.org/abs/2408.10627) | Meta Purple Llama Team | arXiv | [meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama) v3 |
-| C12 | 2024-08 | [Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risk of Language Models](https://arxiv.org/abs/2408.08926) | Andy K. Zhang et al. (Stanford CRFM) | ICLR 2025 | [andyzorigin/cybench](https://github.com/andyzorigin/cybench) |
-| C13 | 2024-07 | [AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases](https://arxiv.org/abs/2407.12784) | Zhaorun Chen et al. (UChicago) | NeurIPS 2024 | LLM Agent 后门 / 记忆投毒 |
-| C14 | 2024-06 | [NYU CTF Bench: A Scalable Open-Source Benchmark for Evaluating LLMs in Offensive Security](https://arxiv.org/abs/2406.05590) | Talor Abramovich et al. (NYU) | NeurIPS 2024 D&B | [NYU-LLM-CTF/NYU_CTF_Bench](https://github.com/NYU-LLM-CTF/NYU_CTF_Bench) |
-| C15 | 2023-12 | [Purple Llama CyberSecEval: A Secure Coding Benchmark for Language Models](https://arxiv.org/abs/2312.04724) | Meta Purple Llama Team | arXiv | [meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama) v1 |
-| C16 | 2023-06 | [InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback](https://arxiv.org/abs/2306.14898) | John Yang et al. (Princeton NLP) | NeurIPS 2023 D&B | [princeton-nlp/intercode](https://github.com/princeton-nlp/intercode) |
+| C1 | 2026-05 | [CTFusion: A CTF-based Benchmark for LLM Agent Evaluation](https://arxiv.org/abs/2605.11504) 🆕 | Lee, Bae et al. | arXiv | 基于 Live CTF 的流式评测框架，抗数据污染 / 作弊 |
+| C2 | 2025-10 | [PACEbench: A Framework for Evaluating Practical AI Cyber-Exploitation Capabilities](https://arxiv.org/abs/2510.11688) ⓝ | — | arXiv | 实战 AI 网络利用能力评测 |
+| C3 | 2025-08 | [Towards Effective Offensive Security LLM Agents (CTFTiny + CTFJudge)](https://arxiv.org/abs/2508.05674) | Shao, Rani et al. | AAAI 2026 | CTFTiny / CTFJudge |
+| C4 | 2025-07 | [Cyber-Zero: Training Cybersecurity Agents without Runtime](https://arxiv.org/abs/2508.00910) | Terry Yue Zhuo et al. (Amazon AGI / Monash) | arXiv | [amazon-science/Cyber-Zero](https://github.com/amazon-science/Cyber-Zero) |
+| C5 | 2025-06 | [CyberGym: Evaluating AI Agents on Real-World Vulnerability Analysis](https://arxiv.org/abs/2506.02548) | Zhun Wang et al. (UC Berkeley Sunblaze) | ICLR 2026 | [sunblaze-ucb/cybergym](https://github.com/sunblaze-ucb/cybergym) |
+| C6 | 2025-06 | [SEC-bench: Automated Benchmarking of LLM Agents on Real-World Software Security Tasks](https://arxiv.org/abs/2506.11791) | SEC-bench Team | NeurIPS 2025 | [SEC-bench/SEC-bench](https://github.com/SEC-bench/SEC-bench) |
+| C7 | 2025-06 | [UDora: A Unified Red Teaming Framework against LLM Agents](https://arxiv.org/abs/2503.01908) | AI-secure 团队 | ICML 2025 | [AI-secure/UDora](https://github.com/AI-secure/UDora) |
+| C8 | 2025-04 | [Benchmarking Practices in LLM-driven Offensive Security: Testbeds, Metrics, and Experiment Design](https://arxiv.org/abs/2504.10112) ⓝ | — | arXiv | LLM 进攻安全评测方法学 |
+| C9 | 2025-02 | [OCCULT: Evaluating Large Language Models for Offensive Cyber Operation Capabilities](https://arxiv.org/abs/2502.15797) ⓝ | — | arXiv | 进攻性网络作战能力评测 |
+| C10 | 2024-10 | [AutoPenBench: Benchmarking Generative Agents for Penetration Testing](https://arxiv.org/abs/2410.03225) | Luca Gioacchini et al. (Politecnico di Torino) | EMNLP Industry 2025 | [lucagioacchini/auto-pen-bench](https://github.com/lucagioacchini/auto-pen-bench) |
+| C11 | 2024-10 | [Towards Automated Penetration Testing: Introducing LLM Benchmark, Analysis, and Improvements](https://arxiv.org/abs/2410.17141) ⓝ | — | arXiv | 渗透测试 LLM 基准 + 改进 |
+| C12 | 2024-08 | [CYBERSECEVAL 3: Advancing the Evaluation of Cybersecurity Risks and Capabilities in LLMs](https://arxiv.org/abs/2408.10627) | Meta Purple Llama Team | arXiv | [meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama) v3 |
+| C13 | 2024-08 | [Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risk of Language Models](https://arxiv.org/abs/2408.08926) | Andy K. Zhang et al. (Stanford CRFM) | ICLR 2025 | [andyzorigin/cybench](https://github.com/andyzorigin/cybench) |
+| C14 | 2024-07 | [AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases](https://arxiv.org/abs/2407.12784) | Zhaorun Chen et al. (UChicago) | NeurIPS 2024 | LLM Agent 后门 / 记忆投毒 |
+| C15 | 2024-06 | [NYU CTF Bench: A Scalable Open-Source Benchmark for Evaluating LLMs in Offensive Security](https://arxiv.org/abs/2406.05590) | Talor Abramovich et al. (NYU) | NeurIPS 2024 D&B | [NYU-LLM-CTF/NYU_CTF_Bench](https://github.com/NYU-LLM-CTF/NYU_CTF_Bench) |
+| C16 | 2023-12 | [Purple Llama CyberSecEval: A Secure Coding Benchmark for Language Models](https://arxiv.org/abs/2312.04724) | Meta Purple Llama Team | arXiv | [meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama) v1 |
+| C17 | 2023-06 | [InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback](https://arxiv.org/abs/2306.14898) | John Yang et al. (Princeton NLP) | NeurIPS 2023 D&B | [princeton-nlp/intercode](https://github.com/princeton-nlp/intercode) |
 
 > 注：会议/期刊年份为论文实际收录会议届期；arXiv 时间为 v1 提交月份。来源致谢：[tmylla/Awesome-LLM4Cybersecurity](https://github.com/tmylla/Awesome-LLM4Cybersecurity)、[EvanThomasLuke/Awesome-AI-Hacking-Agents](https://github.com/EvanThomasLuke/Awesome-AI-Hacking-Agents)、[ox01024/awesome-offensive-security-ai](https://github.com/ox01024/awesome-offensive-security-ai)。
 > *Note: conference years refer to actual proceedings; arXiv dates are v1. Credits to the three awesome lists above.*
@@ -362,24 +372,40 @@
 
 ---
 
-> 🕐 **最后更新时间 / Last updated**：2026-05-29 17:40 (UTC+8)
+## 📚 Awesome List 资源汇编
+*Awesome List Collection*
+
+> 本节汇总专门收录 Offensive AI / AI 安全相关精选资源的 Awesome List 仓库，本文档大量内容来自这几个 list 的交叉合并。
+> *This section gathers Awesome List–style repositories. This document is largely derived from cross-merging the following lists.*
+
+| # | 仓库 | Stars | 维护者 | 内容定位 |
+|---|------|-------|--------|---------|
+| 1 | [jiep/offensive-ai-compilation](https://github.com/jiep/offensive-ai-compilation) | 1.4k | jiep | 攻击性 AI 综合资源（对抗 ML / 渗透 / 钓鱼 / 生成式 AI 滥用） |
+| 2 | [ottosulin/awesome-ai-security](https://github.com/ottosulin/awesome-ai-security) | 1.0k | ottosulin | 通用 AI 安全资源集合（攻防兼顾） |
+| 3 | [TalEliyahu/Awesome-AI-Security](https://github.com/TalEliyahu/Awesome-AI-Security) | 714 | TalEliyahu | 偏 AI 系统防御侧的资源、研究与工具 |
+| 4 | [EvanThomasLuke/Awesome-AI-Hacking-Agents](https://github.com/EvanThomasLuke/Awesome-AI-Hacking-Agents) ⭐**新补充** | 258 | EvanThomasLuke | AI Hacking Agent 全景 + AIxCC 决赛队伍 + 商业产品 + 论文 |
+| 5 | [gmh5225/awesome-ai-security](https://github.com/gmh5225/awesome-ai-security) | 21 | gmh5225 | 面向渗透测试者 / 漏洞猎人 / 安全研究的 AI 安全精选 |
+| 6 | [ox01024/awesome-offensive-security-ai](https://github.com/ox01024/awesome-offensive-security-ai) ⭐**新补充** | 22 | ox01024 | 偏 Benchmark + 评估 / 竞赛 / 学术资源（含中英双语 README）|
 
 ---
 
 ## 📊 统计概览
 *Statistics Overview*
 
-- **项目总数 / Total projects**：61（项目主表 49 个 + AIxCC CRS 系统 7 个 + Awesome List 6 个，去重后 ≈ 61）
-- **收录论文 / Papers**：**67** 篇（A. 渗透 & 红队 33 篇 / B. 漏洞挖掘 18 篇 / C. 评测 & 训练 16 篇；覆盖 2023-06 → 2026-01）
+- **项目总数 / Total projects**：64（项目主表 57 个 + AIxCC CRS 系统 7 个）
+- **进攻型 / 安全专用模型 / Models**：7 个（A. 无对齐进攻型 3 个：WhiteRabbitNeo/DeepHat、Lily-Cybersecurity、BaronLLM；B. 安全专用 4 个：VulnLLM-R、Foundation-Sec-8B-Reasoning、CyberSecQwen-4B、Meta-SecAlign）
+- **收录论文 / Papers**：**73** 篇（A. 渗透 & 红队 37 篇 / B. 漏洞挖掘 19 篇 / C. 评测 & 训练 17 篇；覆盖 2023-06 → 2026-07）
 - **收录 Benchmark / Benchmarks**：12 个（覆盖 2023-06 → 2025-08）
-- **商业产品 / Commercial products**：46 个（国外 39 + 国内 7）
+- **商业产品 / Commercial products**：48 个（国外 39 + 国内 9）
 - **Awesome List**：6 个
 - **主要语言 / Languages**：Python ≈ 70%，TypeScript ≈ 12%，Go ≈ 8%，其他 ≈ 10%
 - **领域趋势 / Trends**：
   - **2023**：方向探索（Happe & Cito、PentestGPT、InterCode-CTF）
   - **2024**：基础工作落地 + 评测基准建立（Cybench、NYU CTF Bench、AutoPenBench、EnIGMA、Fang 三部曲、PenHeal、AutoPT）
   - **2025**：多 Agent 协作 + 训练方法 + 自主 AD 渗透 + 真实 CVE 评测 + AIxCC 决赛 + RL 渗透 + 实证研究（VulnBot、cochise、D-CIPHER、Cyber-Zero、xOffense、CVE-Bench、SEC-bench、CyberGym、ATLANTIS、Buttercup、RapidPen、Pentest-R1、OCCULT、PACEbench）
-  - **2026 起**：商业化加速（XBOW、Pentera、Horizon3.ai、Hacktron、MindFort 等纷纷涌现）+ 持续基准化（PentestEval、PenForge）
+  - **2026 起**：商业化加速（XBOW、Pentera、Horizon3.ai、Hacktron、MindFort 等纷纷涌现）+ 持续基准化（PentestEval、PenForge、CTFusion）+ 攻防闭环与实战化（ZERO-APT 攻防裁判闭环、FuzzingBrain V2 实战挖 0day、Agents4Pentest 综述成型）
+
+> 🕐 **最后更新时间 / Last updated**：2026-07-13 18:56 (UTC+8)
 
 ---
 

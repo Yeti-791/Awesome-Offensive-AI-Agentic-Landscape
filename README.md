@@ -1,6 +1,6 @@
 # Offensive AI Agentic 全景：项目 / 模型 / 论文 / Benchmark / 商业产品 一览
 *Offensive AI Agents Landscape: Projects, Papers, Benchmarks & Commercial Solutions*
-<img width="1073" height="564" alt="Clipboard_Screenshot_1780047912" src="https://github.com/user-attachments/assets/793799dc-53e7-4fee-8959-654fbc09c902" />
+<img width="1073" height="564" alt="599999755-793799dc-53e7-4fee-8959-654fbc09c902" src="https://github.com/user-attachments/assets/f3beb3dd-c4f4-40e1-a6e8-f2ae52743973" />
 
 <div align="center">
 

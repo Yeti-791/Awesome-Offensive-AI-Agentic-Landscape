@@ -1,0 +1,83 @@
+name: 💼 推荐商业产品
+description: 推荐一个 AI / Agentic 智能渗透测试商业化解决方案
+title: "[商业产品推荐] "
+labels: ["commercial-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你推荐商业产品！请填写以下信息。
+        
+        *Thank you for recommending a commercial product!*
+
+  - type: input
+    id: company
+    attributes:
+      label: 公司 / Company
+      placeholder: XBOW
+    validations:
+      required: true
+
+  - type: input
+    id: product
+    attributes:
+      label: 产品名称 / Product Name
+      placeholder: XBOW
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: 官网 / Official Website
+      placeholder: https://xbow.com/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: region
+    attributes:
+      label: 地区 / Region
+      options:
+        - 🌍 国外 (International)
+        - 🇨🇳 国内 (China)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 产品定位与特色 / Positioning & Features
+      description: 一段话描述产品核心能力、目标客户、差异化特点
+      placeholder: 自主攻击性安全平台，"黑客的智慧 + 机器的速度"。首个登顶 HackerOne 排行榜的 AI；通过真实 exploit 独立验证每一发现
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scenario
+    attributes:
+      label: 典型适用场景 / Typical Scenario
+      options:
+        - Web App / API 自主渗透
+        - 生产环境安全验证
+        - 漏洞赏金 / Bug Hunting
+        - 持续攻击面 + 攻击模拟
+        - 业务逻辑 / 复杂渗透
+        - 火力打击型自动化漏洞利用
+        - LLM / Agent 红队
+        - 智能合约 / Web3
+        - 其他
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认事项 / Confirmations
+      options:
+        - label: 官网链接可直接访问
+          required: true
+        - label: 产品与 AI / Agentic 渗透测试直接相关
+          required: true
+        - label: 产品有实际市场运营（非概念阶段）
+          required: true

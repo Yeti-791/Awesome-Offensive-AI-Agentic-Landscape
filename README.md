@@ -6,7 +6,7 @@
 
 | [🛠️ Projects](#开源agent列表) | [🧬 Models](#进攻型--安全专用开源模型) | [📑 Papers](#相关学术论文) | [🧪 Benchmarks](#agent-能力评测-benchmark) | [📚 Awesome Lists](#awesome-list-资源汇编) | [💼 Commercial](#商业化解决方案) |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **53** | **11** | **73** | **13** | **6** | **49** |
+| **56** | **11** | **73** | **13** | **8** | **49** |
 | 渗透 / 红队 / CTF Agent | 进攻 6 + 安全专用 5 | 2023-06 → 2026-07 | 2023-06 → 2026-07 | 资源索引 | 国外 40 + 国内 9 |
 
 </div>
@@ -15,7 +15,7 @@
 >
 > *This document curates open-source projects, offensive & security-specialized open-weight models, academic papers, capability benchmarks, and commercial solutions (international & China) in the field of **AI penetration testing, LLM red teaming, autonomous offensive agents, and vulnerability discovery**, aimed at helping researchers, security engineers, and enterprise decision-makers quickly form a holistic view.*
 >
-> 数据采集时点：2026-07-15（17:08 校对 Star 数 + 移除 Star<90 项目 / 规范标识）｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
+> 数据采集时点：2026-07-15（18:06 校对 Star 数 + 新增 Pentest-Swarm-AI / pentest-ai / PentesterFlow Agent / Awesome List 等）｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
 
 ---
 
@@ -44,43 +44,46 @@
 | 14 | [protectai/vulnhuntr](https://github.com/protectai/vulnhuntr) | 2.7k | Python | 漏洞挖掘 | LLM 零样本漏洞发现，"首个 AI 自主发现 0day" |
 | 15 | [samugit83/redamon](https://github.com/samugit83/redamon) | 2.2k | Python | 红队 Agent | AI 驱动的代理式红队框架 |
 | 16 | [confident-ai/deepteam](https://github.com/confident-ai/deepteam) | 2.1k | Python | LLM 红队 | DeepTeam — LLM 红队测试框架 |
-| 17 | [0xSteph/pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) | 2.0k | Shell | Claude SubAgent | 将 Claude Code 转为攻击性安全研究助手 |
-| 18 | [oritera/Cairn](https://github.com/oritera/Cairn) | 2.0k | Python | 渗透 Agent | 通用状态空间搜索引擎，自主渗透 |
-| 19 | [msoedov/agentic_security](https://github.com/msoedov/agentic_security) | 1.9k | Python | LLM 红队 | Agentic LLM 漏洞扫描器 |
-| 20 | [zakirkun/guardian-cli](https://github.com/zakirkun/guardian-cli) | 1.7k | Python | 渗透 Agent | 生产级 AI 渗透 CLI（Gemini + LangChain） |
-| 21 | [trailofbits/buttercup](https://github.com/trailofbits/buttercup) | 1.6k | Python | 漏洞修复 | Trail of Bits 出品（也是 AIxCC 第二名 CRS） |
-| 22 | [Gowtham-Darkseid/AutoPentestX](https://github.com/Gowtham-Darkseid/AutoPentestX) | 1.4k | Python | 渗透 Agent | 自动化渗透测试与漏洞报告 |
-| 23 | [utkusen/promptmap](https://github.com/utkusen/promptmap) | 1.2k | Python | LLM 红队 | LLM Prompt Injection 自动化扫描器 |
-| 24 | [CyberStrikeus/CyberStrike](https://github.com/CyberStrikeus/CyberStrike) ⭐**新补充** | 1.2k | TypeScript | 渗透 Agent | AI 驱动的进攻性安全代理，7,300+ 安全技能，基于 MITRE ATT&CK / CIS / OWASP / NIST，含网站 [cyberstrike.io](https://cyberstrike.io) |
-| 25 | [ipa-lab/hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) | 1.2k | Python | 渗透 Agent | 50 行代码内调用 LLM 协助伦理黑客 |
-| 26 | [bugbasesecurity/pentest-copilot](https://github.com/bugbasesecurity/pentest-copilot) | 1.1k | JavaScript | 浏览器助手 | 浏览器端的道德黑客辅助工具 |
-| 27 | [berylliumsec/nebula](https://github.com/berylliumsec/nebula) | 1.1k | Python | 渗透助手 | AI 渗透助手，自动侦察 / 笔记 / 漏洞分析 |
-| 28 | [SanMuzZzZz/LuaN1aoAgent](https://github.com/SanMuzZzZz/LuaN1aoAgent) | 1.1k | Python | 渗透 Agent | 全自主 AI 渗透 Agent，XBOW >90%（广州大学）|
-| 29 | [splx-ai/agentic-radar](https://github.com/splx-ai/agentic-radar) | 998 | Python | Agent 安全扫描 | LLM Agentic 工作流安全扫描器（OpenAI Agents、CrewAI、LangGraph 等）|
-| 30 | [ghostsecurity/reaper](https://github.com/ghostsecurity/reaper) | 875 | Go | 测试代理 | Ghost Security 出品的实时验证代理工具，对人 / Agent 双友好 |
-| 31 | [xalgord/xalgorix](https://github.com/xalgord/xalgorix) | 732 | Go | 渗透 Agent | 开源 AI 渗透测试 Agent |
-| 32 | [ASCIT31/Dark-Moon](https://github.com/ASCIT31/Dark-Moon) ⭐**新补充** | 728 | Python | 渗透 Agent | AI 驱动的自主渗透测试引擎，覆盖 Web/云/AD/K8s，多智能体编排 + 隐私网关 + 50+ 工具集成 |
-| 33 | [verialabs/ctf-agent](https://github.com/verialabs/ctf-agent) | 613 | Python | CTF Agent | 自主 CTF solver，BSidesSF 2026 第一名 |
-| 34 | [westonbrown/Cyber-AutoAgent](https://github.com/westonbrown/Cyber-AutoAgent) | 534 | TypeScript | 渗透 Agent | XBOW 验证基准 85%，已归档但代表性强 |
-| 35 | [crond-jaist/AutoPentest-DRL](https://github.com/crond-jaist/AutoPentest-DRL) | 438 | Python | 强化学习渗透 | 使用深度强化学习的自动化渗透测试 |
-| 36 | [0ca/BoxPwnr](https://github.com/0ca/BoxPwnr) | 428 | Python | 渗透 Agent / 多平台基准 | HackTheBox / TryHackMe / picoCTF / Cybench / XBOW 等 15 个平台基准框架 |
-| 37 | [ARCANGEL0/EVA](https://github.com/ARCANGEL0/EVA) | 424 | Python | 渗透 Agent | AI 辅助渗透测试代理，多后端 AI 集成 |
-| 38 | [m-sec-org/BreachWeave](https://github.com/m-sec-org/BreachWeave) | 419 | TypeScript | 渗透 Agent | Manager/Observer/Solver 多角色架构 |
-| 39 | [SHAdd0WTAka/Zen-Ai-Pentest](https://github.com/SHAdd0WTAka/Zen-Ai-Pentest) | 413 | Python | 渗透 Agent | 多代理 AI 渗透框架 + 合规报告 |
-| 40 | [transilienceai/communitytools](https://github.com/transilienceai/communitytools) | 407 | Python | Claude 工具集 | 开源 Claude Code skills/agents/slash command |
-| 41 | [aielte-research/HackSynth](https://github.com/aielte-research/HackSynth) | 309 | Python | 渗透 Agent | Planner + Summarizer 双模块，PicoCTF / OverTheWire 200 题（arXiv:2412.01778）|
-| 42 | [simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest) | 297 | - | 研究项目 | LLM4Pentest 研究代码 |
-| 43 | [xoxruns/deadend-cli](https://github.com/xoxruns/deadend-cli) | 265 | Python | 渗透 Agent | XBOW 黑盒 81%，约 $122 API 成本，本地化执行 |
-| 44 | [yz9yt/BugTrace-AI](https://github.com/yz9yt/BugTrace-AI) | 251 | TypeScript | 漏洞追踪 | （已归档，演进为 BugTraceAI v2） |
-| 45 | [GitHubSecurityLab/seclab-taskflow-agent](https://github.com/GitHubSecurityLab/seclab-taskflow-agent) | 212 | Python | Agent 框架 | GitHub Security Lab 出品，YAML 驱动多 Agent + CodeQL |
-| 46 | [KHenryAegis/VulnBot](https://github.com/KHenryAegis/VulnBot) | 177 | Python | 渗透 Agent | 多代理协作框架的自主渗透测试 |
-| 47 | [chainreactors/tinyctfer](https://github.com/chainreactors/tinyctfer) | 173 | Python | CTF Agent | antix 微型意图运行时 + 元工具设计 |
-| 48 | [NYU-LLM-CTF/nyuctf_agents](https://github.com/NYU-LLM-CTF/nyuctf_agents) | 151 | Python | CTF Agent | NYU CTF Bench 配套的 D-CIPHER + Baseline |
-| 49 | [antoninoLorenzo/AI-OPS](https://github.com/antoninoLorenzo/AI-OPS) | 143 | Python | 渗透助手 | 基于开源 LLM 的渗透测试 AI 助手 |
-| 50 | [andreashappe/cochise](https://github.com/andreashappe/cochise) | 126 | Python | AD 渗透 Agent | 自主 Assumed Breach AD 渗透（TOSEM 2025）|
-| 51 | [arthurgervais/mapta](https://github.com/arthurgervais/mapta) | 102 | Python | 渗透 Agent | 多 Agent Web 应用安全评估 + 端到端漏洞利用验证（arXiv:2508.20816）|
-| 52 | [vikramrajkumarmajji/AI-VAPT](https://github.com/vikramrajkumarmajji/AI-VAPT) | 100 | TypeScript | VAPT 框架 | 自主 AI 漏洞评估与渗透测试框架 |
-| 53 | [amazon-science/Cyber-Zero](https://github.com/amazon-science/Cyber-Zero) | 99 | Python | 训练框架 | 无运行时训练网络安全代理（Amazon Science） |
+| 17 | [Armur-Ai/Pentest-Swarm-AI](https://github.com/Armur-Ai/Pentest-Swarm-AI) ⭐**新补充** | 2.1k | Go | 渗透 Agent | 首个"蜂群"架构自主渗透平台，信息素黑板去中心化协作，ReAct 推理 + 5 种蜂群剧本，支持 Claude API / Ollama 本地，含 MCP 服务器 |
+| 18 | [0xSteph/pentest-ai-agents](https://github.com/0xSteph/pentest-ai-agents) | 2.0k | Shell | Claude SubAgent | 将 Claude Code 转为攻击性安全研究助手 |
+| 19 | [oritera/Cairn](https://github.com/oritera/Cairn) | 2.0k | Python | 渗透 Agent | 通用状态空间搜索引擎，自主渗透 |
+| 20 | [msoedov/agentic_security](https://github.com/msoedov/agentic_security) | 1.9k | Python | LLM 红队 | Agentic LLM 漏洞扫描器 |
+| 21 | [zakirkun/guardian-cli](https://github.com/zakirkun/guardian-cli) | 1.7k | Python | 渗透 Agent | 生产级 AI 渗透 CLI（Gemini + LangChain） |
+| 22 | [trailofbits/buttercup](https://github.com/trailofbits/buttercup) | 1.6k | Python | 漏洞修复 | Trail of Bits 出品（也是 AIxCC 第二名 CRS） |
+| 23 | [Gowtham-Darkseid/AutoPentestX](https://github.com/Gowtham-Darkseid/AutoPentestX) | 1.4k | Python | 渗透 Agent | 自动化渗透测试与漏洞报告 |
+| 24 | [0xSteph/pentest-ai](https://github.com/0xSteph/pentest-ai) ⭐**新补充** | 1.3k | Python | 渗透 Agent | MCP 服务器封装 205+ 安全工具 + 17 个专业代理 + 确定性漏洞验证（零误报），CLI + MCP 双路径，自带 LLM |
+| 25 | [utkusen/promptmap](https://github.com/utkusen/promptmap) | 1.2k | Python | LLM 红队 | LLM Prompt Injection 自动化扫描器 |
+| 26 | [CyberStrikeus/CyberStrike](https://github.com/CyberStrikeus/CyberStrike) ⭐**新补充** | 1.2k | TypeScript | 渗透 Agent | AI 驱动的进攻性安全代理，7,300+ 安全技能，基于 MITRE ATT&CK / CIS / OWASP / NIST，含网站 [cyberstrike.io](https://cyberstrike.io) |
+| 27 | [ipa-lab/hackingBuddyGPT](https://github.com/ipa-lab/hackingBuddyGPT) | 1.2k | Python | 渗透 Agent | 50 行代码内调用 LLM 协助伦理黑客 |
+| 28 | [bugbasesecurity/pentest-copilot](https://github.com/bugbasesecurity/pentest-copilot) | 1.1k | JavaScript | 浏览器助手 | 浏览器端的道德黑客辅助工具 |
+| 29 | [berylliumsec/nebula](https://github.com/berylliumsec/nebula) | 1.1k | Python | 渗透助手 | AI 渗透助手，自动侦察 / 笔记 / 漏洞分析 |
+| 30 | [SanMuzZzZz/LuaN1aoAgent](https://github.com/SanMuzZzZz/LuaN1aoAgent) | 1.1k | Python | 渗透 Agent | 全自主 AI 渗透 Agent，XBOW >90%（广州大学）|
+| 31 | [splx-ai/agentic-radar](https://github.com/splx-ai/agentic-radar) | 998 | Python | Agent 安全扫描 | LLM Agentic 工作流安全扫描器（OpenAI Agents、CrewAI、LangGraph 等）|
+| 32 | [ghostsecurity/reaper](https://github.com/ghostsecurity/reaper) | 875 | Go | 测试代理 | Ghost Security 出品的实时验证代理工具，对人 / Agent 双友好 |
+| 33 | [PentesterFlow/agent](https://github.com/PentesterFlow/agent) ⭐**新补充** | 863 | TypeScript | 渗透 Agent | 终端内 Agentic 进攻性安全，"人在回路中"，内置 OWASP Top 10 技能 + Burp 集成 + 覆盖率跟踪 |
+| 34 | [xalgord/xalgorix](https://github.com/xalgord/xalgorix) | 732 | Go | 渗透 Agent | 开源 AI 渗透测试 Agent |
+| 35 | [ASCIT31/Dark-Moon](https://github.com/ASCIT31/Dark-Moon) ⭐**新补充** | 728 | Python | 渗透 Agent | AI 驱动的自主渗透测试引擎，覆盖 Web/云/AD/K8s，多智能体编排 + 隐私网关 + 50+ 工具集成 |
+| 36 | [verialabs/ctf-agent](https://github.com/verialabs/ctf-agent) | 613 | Python | CTF Agent | 自主 CTF solver，BSidesSF 2026 第一名 |
+| 37 | [westonbrown/Cyber-AutoAgent](https://github.com/westonbrown/Cyber-AutoAgent) | 534 | TypeScript | 渗透 Agent | XBOW 验证基准 85%，已归档但代表性强 |
+| 38 | [crond-jaist/AutoPentest-DRL](https://github.com/crond-jaist/AutoPentest-DRL) | 438 | Python | 强化学习渗透 | 使用深度强化学习的自动化渗透测试 |
+| 39 | [0ca/BoxPwnr](https://github.com/0ca/BoxPwnr) | 428 | Python | 渗透 Agent / 多平台基准 | HackTheBox / TryHackMe / picoCTF / Cybench / XBOW 等 15 个平台基准框架 |
+| 40 | [ARCANGEL0/EVA](https://github.com/ARCANGEL0/EVA) | 424 | Python | 渗透 Agent | AI 辅助渗透测试代理，多后端 AI 集成 |
+| 41 | [m-sec-org/BreachWeave](https://github.com/m-sec-org/BreachWeave) | 419 | TypeScript | 渗透 Agent | Manager/Observer/Solver 多角色架构 |
+| 42 | [SHAdd0WTAka/Zen-Ai-Pentest](https://github.com/SHAdd0WTAka/Zen-Ai-Pentest) | 413 | Python | 渗透 Agent | 多代理 AI 渗透框架 + 合规报告 |
+| 43 | [transilienceai/communitytools](https://github.com/transilienceai/communitytools) | 407 | Python | Claude 工具集 | 开源 Claude Code skills/agents/slash command |
+| 44 | [aielte-research/HackSynth](https://github.com/aielte-research/HackSynth) | 309 | Python | 渗透 Agent | Planner + Summarizer 双模块，PicoCTF / OverTheWire 200 题（arXiv:2412.01778）|
+| 45 | [simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest) | 297 | - | 研究项目 | LLM4Pentest 研究代码 |
+| 46 | [xoxruns/deadend-cli](https://github.com/xoxruns/deadend-cli) | 265 | Python | 渗透 Agent | XBOW 黑盒 81%，约 $122 API 成本，本地化执行 |
+| 47 | [yz9yt/BugTrace-AI](https://github.com/yz9yt/BugTrace-AI) | 251 | TypeScript | 漏洞追踪 | （已归档，演进为 BugTraceAI v2） |
+| 48 | [GitHubSecurityLab/seclab-taskflow-agent](https://github.com/GitHubSecurityLab/seclab-taskflow-agent) | 212 | Python | Agent 框架 | GitHub Security Lab 出品，YAML 驱动多 Agent + CodeQL |
+| 49 | [KHenryAegis/VulnBot](https://github.com/KHenryAegis/VulnBot) | 177 | Python | 渗透 Agent | 多代理协作框架的自主渗透测试 |
+| 50 | [chainreactors/tinyctfer](https://github.com/chainreactors/tinyctfer) | 173 | Python | CTF Agent | antix 微型意图运行时 + 元工具设计 |
+| 51 | [NYU-LLM-CTF/nyuctf_agents](https://github.com/NYU-LLM-CTF/nyuctf_agents) | 151 | Python | CTF Agent | NYU CTF Bench 配套的 D-CIPHER + Baseline |
+| 52 | [antoninoLorenzo/AI-OPS](https://github.com/antoninoLorenzo/AI-OPS) | 143 | Python | 渗透助手 | 基于开源 LLM 的渗透测试 AI 助手 |
+| 53 | [andreashappe/cochise](https://github.com/andreashappe/cochise) | 126 | Python | AD 渗透 Agent | 自主 Assumed Breach AD 渗透（TOSEM 2025）|
+| 54 | [arthurgervais/mapta](https://github.com/arthurgervais/mapta) | 102 | Python | 渗透 Agent | 多 Agent Web 应用安全评估 + 端到端漏洞利用验证（arXiv:2508.20816）|
+| 55 | [vikramrajkumarmajji/AI-VAPT](https://github.com/vikramrajkumarmajji/AI-VAPT) | 100 | TypeScript | VAPT 框架 | 自主 AI 漏洞评估与渗透测试框架 |
+| 56 | [amazon-science/Cyber-Zero](https://github.com/amazon-science/Cyber-Zero) | 99 | Python | 训练框架 | 无运行时训练网络安全代理（Amazon Science） |
 
 > 备注：1k–10k 区间的 Star 数为 GitHub 网页缩写值的换算结果；万级以上误差更大。
 > *Note: stars in the 1k–10k range are converted from GitHub's abbreviated values; 10k+ may carry larger errors.*
@@ -381,24 +384,26 @@
 
 | # | 仓库 | Stars | 维护者 | 内容定位 |
 |---|------|-------|--------|---------|
-| 1 | [jiep/offensive-ai-compilation](https://github.com/jiep/offensive-ai-compilation) | 1.4k | jiep | 攻击性 AI 综合资源（对抗 ML / 渗透 / 钓鱼 / 生成式 AI 滥用） |
-| 2 | [ottosulin/awesome-ai-security](https://github.com/ottosulin/awesome-ai-security) | 1.0k | ottosulin | 通用 AI 安全资源集合（攻防兼顾） |
-| 3 | [TalEliyahu/Awesome-AI-Security](https://github.com/TalEliyahu/Awesome-AI-Security) | 714 | TalEliyahu | 偏 AI 系统防御侧的资源、研究与工具 |
-| 4 | [EvanThomasLuke/Awesome-AI-Hacking-Agents](https://github.com/EvanThomasLuke/Awesome-AI-Hacking-Agents) | 258 | EvanThomasLuke | AI Hacking Agent 全景 + AIxCC 决赛队伍 + 商业产品 + 论文 |
-| 5 | [gmh5225/awesome-ai-security](https://github.com/gmh5225/awesome-ai-security) | 21 | gmh5225 | 面向渗透测试者 / 漏洞猎人 / 安全研究的 AI 安全精选 |
-| 6 | [ox01024/awesome-offensive-security-ai](https://github.com/ox01024/awesome-offensive-security-ai) | 22 | ox01024 | 偏 Benchmark + 评估 / 竞赛 / 学术资源（含中英双语 README）|
+| 1 | [fr0gger/Awesome-GPT-Agents](https://github.com/fr0gger/Awesome-GPT-Agents) ⭐**新补充** | 6.6k | fr0gger | 网络安全 GPT Agents 全景清单，攻防双方向覆盖 |
+| 2 | [jiep/offensive-ai-compilation](https://github.com/jiep/offensive-ai-compilation) | 1.4k | jiep | 攻击性 AI 综合资源（对抗 ML / 渗透 / 钓鱼 / 生成式 AI 滥用） |
+| 3 | [ottosulin/awesome-ai-security](https://github.com/ottosulin/awesome-ai-security) | 1.0k | ottosulin | 通用 AI 安全资源集合（攻防兼顾） |
+| 4 | [TalEliyahu/Awesome-AI-Security](https://github.com/TalEliyahu/Awesome-AI-Security) | 714 | TalEliyahu | 偏 AI 系统防御侧的资源、研究与工具 |
+| 5 | [raphabot/awesome-cybersecurity-agentic-ai](https://github.com/raphabot/awesome-cybersecurity-agentic-ai) ⭐**新补充** | 514 | raphabot | 网络安全 Agentic AI 精选资源（MCP / 工具 / 框架 / 论文 / 社区） |
+| 6 | [EvanThomasLuke/Awesome-AI-Hacking-Agents](https://github.com/EvanThomasLuke/Awesome-AI-Hacking-Agents) | 258 | EvanThomasLuke | AI Hacking Agent 全景 + AIxCC 决赛队伍 + 商业产品 + 论文 |
+| 7 | [gmh5225/awesome-ai-security](https://github.com/gmh5225/awesome-ai-security) | 21 | gmh5225 | 面向渗透测试者 / 漏洞猎人 / 安全研究的 AI 安全精选 |
+| 8 | [ox01024/awesome-offensive-security-ai](https://github.com/ox01024/awesome-offensive-security-ai) | 22 | ox01024 | 偏 Benchmark + 评估 / 竞赛 / 学术资源（含中英双语 README）|
 
 ---
 
 ## 📊 统计概览
 *Statistics Overview*
 
-- **项目总数 / Total projects**：65（项目主表 58 个 + AIxCC CRS 系统 7 个）
-- **进攻型 / 安全专用模型 / Models**：10 个（A. 无对齐进攻型 5 个：WhiteRabbitNeo/DeepHat、Lily-Cybersecurity、BaronLLM、CyberStrike-OffSec-35B、BugTraceAI-CORE-Ultra-27B；B. 安全专用 5 个：VulnLLM-R、Foundation-Sec-8B-Reasoning、CyberSecQwen-4B、Meta-SecAlign、Titus-CybersecurityLLM）
+- **项目总数 / Total projects**：63（项目主表 56 个 + AIxCC CRS 系统 7 个）
+- **进攻型 / 安全专用模型 / Models**：11 个（A. 无对齐进攻型 6 个：Qwythos、WhiteRabbitNeo/DeepHat、Lily-Cybersecurity、BaronLLM、CyberStrike-OffSec-35B、BugTraceAI-CORE-Ultra-27B；B. 安全专用 5 个：VulnLLM-R、Foundation-Sec-8B-Reasoning、CyberSecQwen-4B、Meta-SecAlign、Titus-CybersecurityLLM）
 - **收录论文 / Papers**：**73** 篇（A. 渗透 & 红队 37 篇 / B. 漏洞挖掘 19 篇 / C. 评测 & 训练 17 篇；覆盖 2023-06 → 2026-07）
 - **收录 Benchmark / Benchmarks**：13 个（覆盖 2023-06 → 2026-07）
 - **商业产品 / Commercial products**：49 个（国外 40 + 国内 9）
-- **Awesome List**：6 个
+- **Awesome List**：8 个
 - **主要语言 / Languages**：Python ≈ 70%，TypeScript ≈ 12%，Go ≈ 8%，其他 ≈ 10%
 - **领域趋势 / Trends**：
   - **2023**：方向探索（Happe & Cito、PentestGPT、InterCode-CTF）
@@ -406,7 +411,7 @@
   - **2025**：多 Agent 协作 + 训练方法 + 自主 AD 渗透 + 真实 CVE 评测 + AIxCC 决赛 + RL 渗透 + 实证研究（VulnBot、cochise、D-CIPHER、Cyber-Zero、xOffense、CVE-Bench、SEC-bench、CyberGym、ATLANTIS、Buttercup、RapidPen、Pentest-R1、OCCULT、PACEbench）
   - **2026 起**：商业化加速（XBOW、Pentera、Horizon3.ai、Hacktron、MindFort、**Anthropic Mythos** 等纷纷涌现）+ 持续基准化（PentestEval、PenForge、CTFusion）+ 攻防闭环与实战化（ZERO-APT 攻防裁判闭环、FuzzingBrain V2 实战挖 0day、Agents4Pentest 综述成型）
 
-> 🕐 **最后更新时间 / Last updated**：2026-07-15 17:08 (UTC+8)
+> 🕐 **最后更新时间 / Last updated**：2026-07-15 18:06 (UTC+8)
 
 ---
 

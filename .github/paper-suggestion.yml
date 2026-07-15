@@ -1,0 +1,93 @@
+name: 📄 推荐学术论文
+description: 推荐一篇 Offensive AI / 渗透测试 / 漏洞挖掘领域的学术论文
+title: "[论文推荐] "
+labels: ["paper-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你推荐学术论文！请填写以下信息，维护者审核后会将其加入对应论文表。
+        
+        *Thank you for recommending a paper!*
+
+  - type: input
+    id: paper-url
+    attributes:
+      label: 论文链接 / Paper URL
+      description: arXiv 链接或正式出版链接
+      placeholder: https://arxiv.org/abs/2401.12345
+    validations:
+      required: true
+
+  - type: input
+    id: paper-title
+    attributes:
+      label: 论文标题 / Paper Title
+      placeholder: PentestGPT: An LLM-empowered Automatic Penetration Testing Tool
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: 作者 / 机构 / Authors & Affiliation
+      placeholder: Gelei Deng et al. (NTU)
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: arXiv v1 时间 / arXiv v1 Date
+      description: 格式 YYYY-MM
+      placeholder: "2024-08"
+    validations:
+      required: true
+
+  - type: input
+    id: venue
+    attributes:
+      label: 发表渠道 / Venue
+      description: 正式会议/期刊名（如已正式发表），否则填 arXiv
+      placeholder: USENIX Security 2024 / arXiv
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 论文分类 / Category
+      options:
+        - A. 渗透测试 & 红队 Agent (Pentesting & Red-Team Agents)
+        - B. 漏洞挖掘 / 利用 / 修复 (Vulnerability Discovery / Exploitation / Repair)
+        - C. 评测基准 & 训练方法 & 综述 & 奠基 (Evaluation, Training & Foundational)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 简介 / Description
+      description: 一句话概括论文核心贡献
+      placeholder: 首个将 LLM 用于自动化渗透测试的交互式框架，提出推理/生成双模块架构
+    validations:
+      required: true
+
+  - type: input
+    id: related-project
+    attributes:
+      label: 关联项目 / Related Project
+      description: 如有对应开源仓库，请填写链接
+      placeholder: https://github.com/GreyDGL/PentestGPT
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认事项 / Confirmations
+      options:
+        - label: 论文链接可直接访问
+          required: true
+        - label: 论文与 Offensive AI / 安全 Agent 领域直接相关
+          required: true
+        - label: 时间信息为 arXiv v1 提交日期
+          required: true

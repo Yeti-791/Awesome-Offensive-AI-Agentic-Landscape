@@ -1,0 +1,89 @@
+name: 🛠️ 推荐开源项目
+description: 推荐一个 Offensive AI / 安全领域的开源项目收录到项目总表
+title: "[项目推荐] "
+labels: ["project-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你推荐开源项目！请填写以下信息，维护者审核后会将其加入项目总表。
+        
+        *Thank you for recommending a project! Please fill in the info below.*
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: 仓库链接 / Repository URL
+      description: GitHub / GitLab 等公开仓库地址
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+
+  - type: input
+    id: project-name
+    attributes:
+      label: 项目名称 / Project Name
+      placeholder: PentestGPT
+    validations:
+      required: true
+
+  - type: input
+    id: stars
+    attributes:
+      label: 当前 Star 数 / Current Stars
+      description: 请填写提交时的 star 数
+      placeholder: "4200"
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: 主要语言 / Primary Language
+      placeholder: Python / TypeScript / Go / ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 类型 / Category
+      options:
+        - 渗透 Agent (Pentest Agent)
+        - LLM 红队 (LLM Red Teaming)
+        - 漏洞挖掘 (Vulnerability Discovery)
+        - CTF Agent
+        - MCP
+        - 安全 AI 框架 (Security AI Framework)
+        - 渗透助手 (Pentest Assistant)
+        - 其他 (Other)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 简介 / Description
+      description: 一句话描述核心功能/特点（30-50字中文）
+      placeholder: LLM 驱动的自动化渗透测试代理框架，支持交互式推理和攻击树构建
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 补充信息 / Additional Notes
+      description: 关联论文、特殊标注（如 🆕 新增）、选型建议等
+      placeholder: 关联论文 arXiv:xxxx.xxxxx；该项目在 XBOW Benchmark 得分 85%
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认事项 / Confirmations
+      options:
+        - label: 该项目仅供学习研究、企业内部安全防护与授权渗透测试使用
+          required: true
+        - label: 仓库链接可直接访问，无 404
+          required: true
+        - label: 项目与 Offensive AI / 安全领域直接相关
+          required: true

@@ -1,0 +1,79 @@
+name: 🧪 推荐 Benchmark
+description: 推荐一个用于评估渗透测试 / CTF / 红队 Agent 能力的评测基准
+title: "[Benchmark 推荐] "
+labels: ["benchmark-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你推荐 Benchmark！请填写以下信息。
+        
+        *Thank you for recommending a benchmark!*
+
+  - type: input
+    id: bench-name
+    attributes:
+      label: Benchmark 名称 / Name
+      placeholder: Cybench
+    validations:
+      required: true
+
+  - type: input
+    id: repo-url
+    attributes:
+      label: 仓库链接 / Repository URL
+      description: 公开仓库或官方网站
+      placeholder: https://github.com/andyzorigin/cybench
+    validations:
+      required: true
+
+  - type: input
+    id: stars
+    attributes:
+      label: 当前 Star 数 / Current Stars
+      placeholder: "256"
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: 发布时间 / Release Date
+      description: 格式 YYYY-MM
+      placeholder: "2024-08"
+    validations:
+      required: true
+
+  - type: input
+    id: task-scale
+    attributes:
+      label: 任务规模 / Task Scale
+      placeholder: 40 道专业级 CTF 任务（17 个子任务）
+    validations:
+      required: true
+
+  - type: textarea
+    id: focus
+    attributes:
+      label: 评测重点 / Evaluation Focus
+      description: 该 Benchmark 主要评测什么能力
+      placeholder: Stanford CRFM，支持 Unguided / Subtask 双模式，覆盖 CTF 渗透全流程
+    validations:
+      required: true
+
+  - type: input
+    id: paper
+    attributes:
+      label: 关联论文 / Related Paper
+      description: 如有配套论文请填写 arXiv 链接
+      placeholder: https://arxiv.org/abs/2408.08926
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认事项 / Confirmations
+      options:
+        - label: 仓库/网站链接可直接访问
+          required: true
+        - label: 该 Benchmark 与渗透测试 / CTF / 红队 Agent 评测直接相关
+          required: true

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 社区讨论 / Community Discussion
+    url: https://github.com/Yeti-791/Awesome-Offensive-AI-Agentic-Landscape/discussions
+    about: 提问、讨论、分享想法请到 Discussions | For questions and discussions, please use Discussions
+  - name: 📖 贡献指南 / Contributing Guide
+    url: https://github.com/Yeti-791/Awesome-Offensive-AI-Agentic-Landscape/blob/main/CONTRIBUTING.md
+    about: 提交前请先阅读贡献指南 | Please read the contributing guide before submitting
+  - name: 🏆 腾讯云智能渗透黑客松 / Tsec Hackathon
+    url: https://github.com/Yeti-791/Tsec-Hackathon
+    about: 了解腾讯云鼎实验室智能渗透黑客松赛事 | Learn more about Tsec Hackathon

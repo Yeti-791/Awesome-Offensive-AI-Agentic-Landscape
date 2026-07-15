@@ -6,8 +6,8 @@
 
 | 🛠️ Projects | 🧬 Models | 📑 Papers | 🧪 Benchmarks | 📚 Awesome Lists | 💼 Commercial |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| **66** | **10** | **73** | **13** | **6** | **49** |
-| 渗透 / 红队 / CTF / AIxCC Agent | 进攻 5 + 安全专用 5 | 2023-06 → 2026-07 | 2023-06 → 2026-07 | 资源索引 | 国外 40 + 国内 9 |
+| **66** | **11** | **73** | **13** | **6** | **49** |
+| 渗透 / 红队 / CTF / AIxCC Agent | 进攻 6 + 安全专用 5 | 2023-06 → 2026-07 | 2023-06 → 2026-07 | 资源索引 | 国外 40 + 国内 9 |
 
 </div>
 
@@ -15,7 +15,7 @@
 >
 > *This document curates open-source projects, offensive & security-specialized open-weight models, academic papers, capability benchmarks, and commercial solutions (international & China) in the field of **AI penetration testing, LLM red teaming, autonomous offensive agents, and vulnerability discovery**, aimed at helping researchers, security engineers, and enterprise decision-makers quickly form a holistic view.*
 >
-> 数据采集时点：2026-07-15（12:11 校对 Star 数 + 新增 Dark-Moon 等）｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
+> 数据采集时点：2026-07-15（16:57 校对 Star 数 + 新增 Dark-Moon / Qwythos 等）｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
 
 ---
 
@@ -107,11 +107,12 @@
 
 | # | 模型 | 参数量 | 基座 | 发布方 | 定位与特色 |
 |---|------|-------|------|--------|-----------|
-| 1 | [WhiteRabbitNeo / DeepHat](https://huggingface.co/WhiteRabbitNeo)（[DeepHat-V1-7B](https://ollama.com/DeepHat)、13B、33B、70B）| 7B–70B | Llama / Qwen / DeepSeek | Kindo.ai | 最知名的**无审查红队模型**家族，2025 Black Hat 后更名 DeepHat。面向真实进攻推理、长上下文分析，可映射立足点、串联弱点、探索利用路径 |
-| 2 | [Lily-Cybersecurity-7B-v0.2](https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) | 7B | Mistral-7B | Sego Lily Labs | Mistral 微调，22,000 条手工构造的网络安全 / 黑客问答对，无强拒答对齐，适合本地渗透问答助手 |
-| 3 | [BaronLLM (Offensive Security LLM)](https://huggingface.co/AlicanKiraz0)（[GGUF Q6_K](https://www.aimodels.fyi/models/huggingFace/cybersecurity-baronllm-offensive-security-llm-q6-k-gguf-alicankiraz0)）| 7B/8B 级 | — | AlicanKiraz0 | 专为**进攻性安全研究、对抗模拟、红队**微调的模型，输出偏向 exploit / 攻击链推理 |
-| 4 | [CyberStrike-OffSec-35B](https://huggingface.co/oyildirim/CyberStrike-OffSec-35B) 🆕 | 35B MoE（激活 3B）| Qwen3.6-35B-A3B | Orhan Yildirim | **35B 混合专家进攻性安全模型**，SFT+DPO 训练，专攻漏洞利用开发 / 红队行动 / 云攻击 / 免杀技术，自称**多个安全基准超越 GPT-4**，**无安全对齐** |
-| 5 | [BugTraceAI-CORE-Ultra-27B](https://huggingface.co/BugTraceAI/BugTraceAI-CORE-Ultra-27B-Q6) 🆕 | 27B | Qwen3.6-27B | BugTraceAI | 基于 2,541 份**真实漏洞赏金报告 + CVE 分析 + 进攻性安全研究** SFT 微调，专注漏洞发现与 Nuclei 模板生成，面向 Bug Bounty 场景 |
+| 1 | [Qwythos-9B-Claude-Mythos-5-1M](https://huggingface.co/bestexhibitions/Qwythos-9B-Claude-Mythos-5-1M) 🆕（[Ollama](https://github.com/mickyhq/qwythos)）| 9B | Qwen3.5-9B（深度无审查）| Empero AI | 🔥 **“Claude 平替”级无审查推理模型**，后训练超 5 亿 token Claude Mythos/Fable 思维链，1M 上下文 + 自我纠正工具调用，4GB 显存即可本地运行，MMLU +34.3 / gsm8k +30 大幅超越基座 |
+| 2 | [WhiteRabbitNeo / DeepHat](https://huggingface.co/WhiteRabbitNeo)（[DeepHat-V1-7B](https://ollama.com/DeepHat)、13B、33B、70B）| 7B–70B | Llama / Qwen / DeepSeek | Kindo.ai | 最知名的**无审查红队模型**家族，2025 Black Hat 后更名 DeepHat。面向真实进攻推理、长上下文分析，可映射立足点、串联弱点、探索利用路径 |
+| 3 | [Lily-Cybersecurity-7B-v0.2](https://huggingface.co/segolilylabs/Lily-Cybersecurity-7B-v0.2) | 7B | Mistral-7B | Sego Lily Labs | Mistral 微调，22,000 条手工构造的网络安全 / 黑客问答对，无强拒答对齐，适合本地渗透问答助手 |
+| 4 | [BaronLLM (Offensive Security LLM)](https://huggingface.co/AlicanKiraz0)（[GGUF Q6_K](https://www.aimodels.fyi/models/huggingFace/cybersecurity-baronllm-offensive-security-llm-q6-k-gguf-alicankiraz0)）| 7B/8B 级 | — | AlicanKiraz0 | 专为**进攻性安全研究、对抗模拟、红队**微调的模型，输出偏向 exploit / 攻击链推理 |
+| 5 | [CyberStrike-OffSec-35B](https://huggingface.co/oyildirim/CyberStrike-OffSec-35B) 🆕 | 35B MoE（激活 3B）| Qwen3.6-35B-A3B | Orhan Yildirim | **35B 混合专家进攻性安全模型**，SFT+DPO 训练，专攻漏洞利用开发 / 红队行动 / 云攻击 / 免杀技术，自称**多个安全基准超越 GPT-4**，**无安全对齐** |
+| 6 | [BugTraceAI-CORE-Ultra-27B](https://huggingface.co/BugTraceAI/BugTraceAI-CORE-Ultra-27B-Q6) 🆕 | 27B | Qwen3.6-27B | BugTraceAI | 基于 2,541 份**真实漏洞赏金报告 + CVE 分析 + 进攻性安全研究** SFT 微调，专注漏洞发现与 Nuclei 模板生成，面向 Bug Bounty 场景 |
 
 > ⚠️ 说明：此类模型刻意弱化安全对齐，可直接产出攻击性内容，**必须严格限定于授权测试 / 隔离环境**（详见文末免责声明）。
 > *These models intentionally weaken safety alignment; use only within authorized, isolated environments.*
@@ -411,7 +412,7 @@
   - **2025**：多 Agent 协作 + 训练方法 + 自主 AD 渗透 + 真实 CVE 评测 + AIxCC 决赛 + RL 渗透 + 实证研究（VulnBot、cochise、D-CIPHER、Cyber-Zero、xOffense、CVE-Bench、SEC-bench、CyberGym、ATLANTIS、Buttercup、RapidPen、Pentest-R1、OCCULT、PACEbench）
   - **2026 起**：商业化加速（XBOW、Pentera、Horizon3.ai、Hacktron、MindFort、**Anthropic Mythos** 等纷纷涌现）+ 持续基准化（PentestEval、PenForge、CTFusion）+ 攻防闭环与实战化（ZERO-APT 攻防裁判闭环、FuzzingBrain V2 实战挖 0day、Agents4Pentest 综述成型）
 
-> 🕐 **最后更新时间 / Last updated**：2026-07-15 12:11 (UTC+8)
+> 🕐 **最后更新时间 / Last updated**：2026-07-15 16:57 (UTC+8)
 
 ---
 

@@ -1,4 +1,4 @@
-# Offensive AI Agentic 全景：项目 / 论文 / Benchmark / 商业产品 一览
+# Offensive AI Agentic 全景：开源项目 / 模型 / 论文 / Benchmark / 商业产品 一览
 *Offensive AI Agents Landscape: Projects, Papers, Benchmarks & Commercial Solutions*
 <img width="1073" height="564" alt="599999755-793799dc-53e7-4fee-8959-654fbc09c902" src="https://github.com/user-attachments/assets/f3beb3dd-c4f4-40e1-a6e8-f2ae52743973" />
 
@@ -11,9 +11,9 @@
 
 </div>
 
-> 本文档系统整理了 **AI 渗透测试 / LLM 红队 / 自主攻击 Agent / 漏洞挖掘** 领域的开源项目、进攻型 / 安全专用开源模型、学术论文、能力评测 Benchmark 与国内外商业化解决方案，旨在帮助研究者、安全工程师与企业安全决策者快速建立领域全景认知。
+> 本文档以**进攻型 AI**为主线，系统整理了 **AI 渗透测试 / 自主红队 Agent** 领域的开源项目、进攻型 & 安全专用开源模型、学术论文、能力评测 Benchmark 与国内外商业化解决方案，帮助研究者、安全工程师与企业安全决策者快速建立领域全景认知。注意：本文档聚焦"用 AI 做攻击"，而非"攻击 AI 系统"（LLM 自身安全性如 prompt injection / jailbreak 等不在主线范围，仅少量关联项目涉及）。
 >
-> *This document curates open-source projects, offensive & security-specialized open-weight models, academic papers, capability benchmarks, and commercial solutions (international & China) in the field of **AI penetration testing, LLM red teaming, autonomous offensive agents, and vulnerability discovery**, aimed at helping researchers, security engineers, and enterprise decision-makers quickly form a holistic view.*
+> *This document focuses on **offensive AI** — curating open-source projects, offensive & security-specialized open-weight models, academic papers, capability benchmarks, and commercial solutions (international & China) in **AI-driven penetration testing & autonomous red-team agents**. It helps researchers, security engineers, and enterprise decision-makers quickly form a holistic view of the domain. Note: the primary lens is "using AI to attack", not "attacking AI systems" (LLM security topics such as prompt injection / jailbreaking are out of scope for the main thread, though a few related projects may appear incidentally).
 >
 > 数据采集时点：2026-07-15（18:06 校对 Star 数 + 新增 Pentest-Swarm-AI / pentest-ai / PentesterFlow Agent / Awesome List 等）｜ Star 数 ≥ 1000 统一以 `k` 为单位（保留一位小数）。
 

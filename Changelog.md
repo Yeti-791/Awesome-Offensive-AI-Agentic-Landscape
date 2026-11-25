@@ -8,6 +8,32 @@
 
 ---
 
+## 2026-11-23 ~ 11-29
+
+### 2026-11-25（第六轮）— 新增「D. 蜜罐与欺骗防御（防御侧）」论文小节（129 → 139）
+
+本条为本地文档修订记录，依据实际文件修改与更新前后表格行数整理，**不是新增 Git commit**。**未运行任何代码或安装命令**，仅只读检索与抓取 arXiv 摘要页、DOI 落地页与 USENIX 论文页。
+
+**背景与意图**：此前论文表只覆盖进攻侧，未考虑针对 LLM 攻击者的防御措施。本轮检索蜜罐、欺骗防御相关关键词，新增独立「D. 蜜罐与欺骗防御（防御侧）」小节，让做进攻 AI 的人也能对照了解对手的防御手段；并确认文档虽已有 6 篇进攻侧综述，但缺蜜罐/欺骗防御方向的综述，一并补上 `SoK: Honeypots & LLMs`。
+
+**新增 D 段 10 篇（论文 129 → 139，A 70 / B 20 / C 39 / D 10；覆盖范围 → 2026-11）**：
+1. Adaptive LLM-Driven Honeypots vs. LLM-Driven Attackers（arXiv:2611.22589，v1 2026-11-17）
+2. A Gingerbread House for LLM Agents（arXiv:2611.07611，v1 2026-11-05）
+3. Make the Adversary Spend More Energy: Generative Deception（arXiv:2610.27739，v1 2026-10-20）
+4. AgentSnare（arXiv:2607.26998，v1 2026-07-29 / v5 11-01）
+5. Honeyquest for LLMs（arXiv:2606.21037，v1 2026-06-19 / v3 10-23）
+6. AIWAF（DOI 10.20172/j.issn.2097-3136.260922，中文期刊，DOI 注册 2026-11，仅确认到年）
+7. SoK: Honeypots & LLMs（arXiv:2510.25939，v1 2025-10-29 / v4 2026-04-07，综述）
+8. Cloak, Honey, Trap（USENIX Security 2025，BGU）
+9. Perry（arXiv:2506.20770，v1 2025-06-25 / v2 09-25）
+10. Hacking Back the AI-Hacker（arXiv:2410.20911，v1 2024-10-28，Mantis，附代码）
+
+**重新审查纳入**：上一轮（第五轮）按「排除防御治理」口径排除的 `SoK Honeypots & LLMs`、`AIWAF`、`AgentSnare`、`Perry`、`Hacking Back the AI-Hacker` 五篇，本轮按用户要求重新审查后**转入 D 段**；仍排除 `Ethics Statements`（伦理治理）、Poster 合规审计，以及属「AI 系统自身安全 / 能力综述」的 RedTeamCUA、Cyber-Capable AI Agents、Rethinking PT for AI-Enabled Systems、A Survey on Agentic Security。
+
+**核验**：10 篇均回查 arXiv 摘要页 / DOI / USENIX 页面取得标题、作者、日期与渠道；AIWAF 为中文期刊，日期仅确认到年（DOI 注册 2026-11），未补造月份；Cloak/Honey/Trap 与 AIWAF 无 arXiv，分别以 USENIX 页面与 DOI 为准。
+
+**同步项**：顶部统计条论文数 129 → 139；统计概览「论文 / Papers」139 篇（A 70 / B 20 / C 39 / D 10）、覆盖范围 2023-06 → 2026-11；论文表英文分段说明更新为 139；论文表脚注追加本轮来源、转入 D 段的五篇与仍排除清单。D 段编号 D1–D10 连续、每行 7 竖线、日期降序。
+
 ## 2026-11-16 ~ 11-22
 
 ### 2026-11-18（第五轮）— 按 LLM4Pentest 清单去重补录 7 篇论文（122 → 129）
@@ -344,7 +370,7 @@
 
 ## 📊 统计总结 / Summary
 
-- **历史已记载提交 / Recorded historical commits**：19（本轮未复核远端提交数量）；另有 **9** 轮本地文档修订：2026-09-02 / 09-07×2 / 09-11 / 11-18 / 11-18（补充轮次）/ 11-18（第三轮）/ 11-18（第四轮）/ 11-18（第五轮）。
+- **历史已记载提交 / Recorded historical commits**：19（本轮未复核远端提交数量）；另有 **10** 轮本地文档修订：2026-09-02 / 09-07×2 / 09-11 / 11-18 / 11-18（补充轮次）/ 11-18（第三轮）/ 11-18（第四轮）/ 11-18（第五轮）/ 11-25（第六轮）。
 - **首次提交 / First commit**：2026-06-11（仓库初始化，仅 LICENSE）
 - **首个内容版本 / First content version**：2026-06-11（`a530c6e`，392 行完整文档）
 - **日志中最近记载的提交 / Latest recorded commit**：2026-07-20（非远端最新提交断言）；**最新本地修订 / Latest local revision**：2026-11-18（补充轮次）。
@@ -361,6 +387,7 @@
   10. 11-18（第三轮）：依个人审计盘点 PDF 扩充主表 10 个项目（Agent 50→60）；仅取候选名单与仓库地址，未采用其审计分类与 Stars 快照，低星与无法核验者列名不收录。
   11. 11-18（第四轮）：商业章节改为国内优先（国内节前置、选型对照换列），新增腾讯云「无境」并调至国内第 2，微步在线置首，商业 31→32。
   12. 11-18（第五轮）：按 LLM4Pentest 清单去重补录 7 篇论文（论文 122→129，A 70 / B 20 / C 39），BountyBench 补 arXiv 链接；AI 系统安全与防御治理类整体排除。
+  13. 11-25（第六轮）：新增「D. 蜜罐与欺骗防御（防御侧）」10 篇（论文 129→139，A 70 / B 20 / C 39 / D 10），重新审查纳入上轮排除的蜜罐/欺骗类防御论文，补上蜜罐方向综述。
 
 ---
 

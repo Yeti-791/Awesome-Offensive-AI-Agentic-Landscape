@@ -6,16 +6,22 @@
 
 | [🛠️ Projects](#开源agent列表) | [🧬 Models](#进攻型--安全专用开源模型) | [🧩 Skills](#进攻型-ai-skill-资源精选) | [🔌 MCP](#进攻型-ai-mcp-server-精选) | [Competitions](#知名-ai-攻防--智能渗透赛事) | [📑 Papers](#相关学术论文) | [🧪 Benchmarks](#agent-能力评测-benchmark) | [📚 Awesome Lists](#awesome-list-资源汇编) | [💼 Commercial](#商业化解决方案) |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **60** | **12** | **6** | **10** | **3** | **129** | **15** | **11** | **32** |
+| **60** | **12** | **6** | **10** | **3** | **139** | **15** | **11** | **32** |
 | 渗透 / 红队 / CTF 与关联框架 | 安全研究 5 + 专用 7 | 纯 Skill · ≥100 Stars | 独立工具桥接 · ≥100 Stars | 赛事系列 · 区分届次阶段 | 2023 → 2026 | 2023 → 2026 | 交叉检索索引 | 国内 12 + 国外精选 20 |
 
 </div>
 
-> 本文档以**进攻型 AI**为主线，整理 **AI 渗透测试 / 自主红队 Agent** 领域的开源项目、**进攻型与安全专用开放权重模型**、**Skills 与独立安全工具 MCP Server**、**攻防/智能渗透赛事**、论文、能力评测 Benchmark、资源汇编与国内外商业服务，帮助研究者与安全工程师建立领域认知。聚焦**“用 AI 进行授权安全测试”**，而非 LLM 自身的越狱/提示注入测试；关联防御资源明确标注。开放权重、开源代码、托管评测与闭源商用并非同一概念。
+> **🚀 一个持续维护的「进攻型 AI」全景地图**——聚焦**用 AI 做授权渗透测试与自主红队**，把开源 Agent、开放权重模型、Skills 与安全工具 MCP、攻防赛事、论文、Benchmark、资源汇编和国内外商业产品放在一张表里。无论你是做 **AI 红队、漏洞研究、CTF**，还是AI 渗透产品，都能在这里快速定位值得跟进的项目、模型与数据。主线是**用 AI 攻**，而非攻击 LLM 自身安全；关联防御资源明确标注。
 >
-> *An **offensive AI** landscape covering open-source projects, **offensive/security-specialized open-weight models**, **Skills and independent security-tool MCP servers**, **competitions**, papers, capability benchmarks, curated lists and commercial services for **authorized AI-driven penetration testing and red-team workflows**. Attacks on LLM safety are not the main scope. Open weights, open-source code, hosted evaluation and proprietary services are explicitly distinguished.*
+> **为什么要看这里**：AI 正把渗透测试从「人工提权」推向「自主攻防」，但哪些项目真能用、哪些只有 demo、哪些已经闭源，信息高度分散。本文档按 **精确 Stars 排序 + 逐项核验**整理，并明确区分 **开放权重 / 开源代码 / 托管评测 / 闭源商用**，帮你穿透宣传话术。2026-11 起还新增了**防御侧**视角——蜜罐、欺骗防御与对抗 LLM 攻击者的措施（见论文 D 段），让进攻方也能看清对手会怎么布防。
 >
-> 数据采集时点：**2026-11-18**｜重点更新上次采集后变化，并补漏重要资源；Stars 先取 GitHub 当次精确值排序，≥ 1000 显示一位小数 `k`。来源可能晚于本文历史版本，失败/受限项在相应章节说明；本轮未验证全部存量论文或运行被收录代码。
+> **🔍 亮点速览**：🛠️ 开源 Agent **60+** ｜ 🧬 模型 **12** ｜ 🧩 Skills **6** ｜ 🔌 MCP **10** ｜ 🏆 赛事 **3** 系列 ｜ 📑 论文 **139** 篇（含综述与防御侧）｜ 🧪 Benchmark **15** ｜ 📚 资源汇编 **11** ｜ 💼 商业产品 **32** 家——全部中英双语、持续更新。
+>
+> *A continuously maintained **offensive AI landscape** for **authorized AI-driven penetration testing and autonomous red teaming**: open-source agents, open-weight models, Skills & security-tool MCP servers, competitions, papers, benchmarks, curated lists, and commercial products — all in one place. Built for offensive-AI researchers, red teamers, vulnerability researchers, CTF players, and security engineers to quickly find projects, models and datasets worth tracking. Using AI to attack is the main scope, not attacking LLM safety; defensive resources are clearly labeled.*
+>
+> *Why it matters: AI is turning penetration testing from manual exploitation into autonomous offense-and-defense. Stars-sorted and entry-by-entry verified, this list separates open weights from open source and hosted evaluation from closed commercial products, so you can cut through marketing noise. Since late 2026 it also covers the defensive side — honeypots, cyber deception, and anti-LLM-attacker defenses (paper section D) — so offensive builders can see how defenders counter them.*
+>
+> 数据采集时点：**2026-11-25**｜持续更新；Stars 取 GitHub 当次精确值排序，≥ 1000 显示一位小数 `k`。来源可能晚于本文历史版本，失败/受限项在相应章节说明；未逐项运行被收录代码，作者自报成绩已标注。
 
 ---
 
@@ -248,7 +254,7 @@
 >
 > 时间以 arXiv v1 / 首发日期为准，后续修订另注；仅有年份的存量条目不补造月份。<small>*⭐新补充*</small> = 本轮新增（2026-11-18），ⓝ 为历史补充。预印本、正式录用及作者自报结果分别表述，论文修订日期不改变首次发表排序。
 >
-> *Five primary-source additions bring the total to **121**: (A) Pentesting & Red-Team Agents (64), (B) Vulnerability Research/Repair (20), and (C) Evaluation/Training/Surveys (37). Existing entries were not all re-audited this round. First submission dates and later revisions are distinguished; publisher-reported results are not independent replication.*
+> *The paper list totals **139**: (A) Pentesting & Red-Team Agents (70), (B) Vulnerability Research/Repair (20), (C) Evaluation/Training/Surveys & Foundational (39), and (D) Honeypots, Cyber Deception & Anti-LLM-Attacker Defenses (10, defensive side). Existing entries were not all re-audited this round. First submission dates and later revisions are distinguished; publisher-reported results are not independent replication.*
 
 ### A. 渗透测试 & 红队 Agent
 *Pentesting & Red-Team Agents*
@@ -397,10 +403,31 @@
 | C38 | 2024 | [自动化渗透测试技术研究综述](http://www.jos.org.cn/1000-9825/7038.htm) | — | 软件学报 2024 | 中文视角的自动化渗透测试技术综述 |
 | C39 | 2023-06 | [InterCode: Standardizing and Benchmarking Interactive Coding with Execution Feedback](https://arxiv.org/abs/2306.14898) | John Yang et al.（Princeton NLP） | NeurIPS 2023 D&B | [princeton-nlp/intercode](https://github.com/princeton-nlp/intercode)：交互式执行反馈奠基基准 |
 
+### D. 蜜罐与欺骗防御（防御侧）
+*Honeypots, Cyber Deception & Anti-LLM-Attacker Defenses*
+
+> 本节收录**针对 LLM 自主攻击的防御侧**研究（蜜罐、欺骗、诱捕与反制），供进攻型研究对照了解对手会如何布防；与 A/B/C 的进攻主线分开，不并入能力排序。arXiv 时间为 v1 提交月，与录用渠道分列。
+
+| # | 时间 | 论文 | 作者 / 机构 | 发表渠道 | 关联项目 / 主题 |
+|---|------|------|-----------|---------|---------------|
+| D1 | 2026-11 | [Adaptive LLM-Driven Honeypots vs. LLM-Driven Attackers: Does Narrative Coherence Improve Deception?](https://arxiv.org/abs/2611.22589) <small>*⭐新补充*</small> | Pedro Beltrán-López, Raul Gonzalez Jimenez, Dario Maddaloni, Manuel Gil Pérez | arXiv（v1 11-17） | 叙事连贯蜜罐：命令映射 ATT&CK、部署 MITRE Engage 相互指涉制品；1,150 SSH 会话下高级攻击者中位会话 40→165 命令、放弃率 86%→52% |
+| D2 | 2026-11 | [A Gingerbread House for LLM Agents: Source-Planned Honeypots That Lure Autonomous Attackers into an Isolated Shadow](https://arxiv.org/abs/2611.07611) <small>*⭐新补充*</small> | Seungdeok Roh, Seokjun Ryu, Sohee Park, Daeseon Choi | arXiv（v1 11-05） | 按应用源码规划静态蜜罐、把确认攻击者请求路由到隔离影子副本；CVE-Bench 40 任务真实攻陷 Claude Opus 4.8 26/40→5/40、ARTEX 20/40→0/40，20 个新任务 15/20→0/20 |
+| D3 | 2026-10 | [Make the Adversary Spend More Energy: Generative Deception against Language-Model Attackers in Critical Infrastructure](https://arxiv.org/abs/2610.27739) <small>*⭐新补充*</small> | Vlad Mihal, Hosam Alamleh, Alessandro Cantelli-Forti | arXiv（v1 10-20） | 评估 LLM 攻击者与防御诱饵的能耗不对称，提出面向 SCADA 的生成式欺骗架构 |
+| D4 | 2026-07 | [AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Web Penetration Agents](https://arxiv.org/abs/2607.26998) <small>*⭐新补充*</small> | Ruoyu Wang, Heng Zhao, Renjie Wu, Tianhang Zheng | arXiv（v1 07-29；v5 11-01） | 轨迹自适应欺骗：ShadowOS + 离线训练的小型 LLM 生成动态诱饵，延迟/转移/化解自主 Web 渗透 Agent |
+| D5 | 2026-06 | [Honeyquest for LLMs: Rethinking Cyber Deception for AI Attackers](https://arxiv.org/abs/2606.21037) <small>*⭐新补充*</small> | Kerri Prinos, Lilianne Brush, Cameron Denton | arXiv（v1 06-19；v3 10-23） | 21 模型、10,962 条响应 vs 47 名人类基线、174 侦察查询；73.4% 出现「推理识别陷阱却仍利用」的认知-行动鸿沟 |
+| D6 | 2026 | [AIWAF：针对大语言模型渗透智能体的认知对抗型 WAF](https://doi.org/10.20172/j.issn.2097-3136.260922) <small>*⭐新补充*</small> | 李啸林、高见、邹宇宸、李明锋 等（6 人） | 中文期刊（CNKI 收录，DOI 注册 2026-11） | 面向 LLM 渗透智能体的认知对抗型 Web 应用防火墙 |
+| D7 | 2025-10 | [SoK: Honeypots & LLMs, More Than the Sum of Their Parts?](https://arxiv.org/abs/2510.25939) <small>*⭐新补充*</small> | Robert A. Bridges, Thomas R. Mitchell, Mauricio Muñoz, Ted Henriksson | arXiv（v1 2025-10-29；v4 2026-04-07） | LLM 蜜罐领域首个系统化综述：检测向量分类、典型架构、评估框架与自主欺骗路线图 |
+| D8 | 2025-08 | [Cloak, Honey, Trap: Proactive Defenses Against LLM Agents](https://www.usenix.org/conference/usenixsecurity25/presentation/ayzenshteyn) <small>*⭐新补充*</small> | Daniel Ayzenshteyn, Roy Weiss, Yisroel Mirsky（BGU） | USENIX Security 2025 | CHeaT：利用 LLM 的偏见、记忆限制与分词问题，干扰、检测或压制恶意 LLM Agent |
+| D9 | 2025-06 | [Perry: A High-level Framework for Accelerating Cyber Deception Experimentation](https://arxiv.org/abs/2506.20770) <small>*⭐新补充*</small> | Brian Singer, Yusuf Saquib, Lujo Bauer, Vyas Sekar | arXiv（v1 06-25；v2 09-25） | 高层欺骗实验框架，降低实现成本、支持评估欺骗策略的权衡 |
+| D10 | 2024-10 | [Hacking Back the AI-Hacker: Prompt Injection as a Defense Against LLM-driven Cyberattacks](https://arxiv.org/abs/2410.20911) <small>*⭐新补充*</small> | Dario Pasquini, Evgenios M. Kornaropoulos, Giuseppe Ateniese | arXiv（v1 10-28；v2 11-18） | Mantis：以提示注入干扰/反制 LLM 驱动的自动化攻击；[项目代码](https://github.com/pasquini-dario/project_mantis) |
+
 > 注：会议/期刊年份为论文实际收录会议届期；arXiv 时间为 v1 提交月份。来源致谢：[tmylla/Awesome-LLM4Cybersecurity](https://github.com/tmylla/Awesome-LLM4Cybersecurity)、[EvanThomasLuke/Awesome-AI-Hacking-Agents](https://github.com/EvanThomasLuke/Awesome-AI-Hacking-Agents)、[simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest)（2026-09-11 逐篇交叉核对）。本轮移除的 4 篇"攻击 AI 系统 / LLM 自身安全"类论文：UDora（劫持 LLM Agent 推理的红队框架）、AgentPoison（LLM Agent 记忆投毒后门）、CyberSecEval 1/3（LLM 安全编码与风险评测，其基准本体仍保留于 Benchmark 章节）。
 > 本轮新增 **KaliBench**（C2），按 v1 首次提交时间排入 2026-10；其正式渠道为 NeurIPS 2026 Evaluations & Datasets Track（arXiv Comments 原文），与 CyberArena 的 arXiv v1（10-13）分列，不合并为同一来源。**C1–C38 已按首次发表时间重排重编号**，历史条目内容未改动。
 > **本轮补录（2026-11-18）**：按 [simon-p-j-r/LLM4Pentest](https://github.com/simon-p-j-r/LLM4Pentest) 最新清单（现 123 篇，分 SYSTEM & AGENT 55 / BENCHMARK 23 / EMPIRICAL 23 / SURVEY 13 / DEFENSE 9）逐条去重后**实际新增 7 篇**——本表此前已于 2026-09-11 按该清单核对过一轮，故 AWE、CHIMERA、FirmAgent、PTFusion、CTFAgent、AutoPT、Comparing AI Agents、LLMs as Hackers、AutoPentester、Controller 等**均已在表内，未重复新增**。新增：CyberEvolver（arXiv 2605.26195）、MazeRunner（2608.14216）、CTF/认证问答能力评估（2308.10443）、Perses（AsiaCCS 2025）、Context Relay（LAST-X 2026）、On the Adversarial Planning Capabilities of LLMs（ARES 2026 Workshops）、LLMs for Cyber Security 系统综述（TOSEM 2025）。每篇均回查 arXiv 摘要页或 DOI 落地页取得标题、作者、日期与渠道，**不采信清单的年份与分类标注**；日期无法确认者不插入，也未虚构作者。**排除项**：属「AI 系统自身安全 / 防御治理」的 RedTeamCUA、Cyber-Capable AI Agents、Rethinking PT for AI-Enabled Systems、Agentic Security 综述、SoK Honeypots、AIWAF、AgentSnare、Ethics Statements、Perry、Hacking Back 一律不收录；Research Square 预印本（PentestMCP 已收）、两篇孟加拉国高校学位论文、CTF 新手教育研究（2602.18172）与非 LLM 的 CTF 环境配置综述亦不收录。**A1–A70 与 C1–C39 已整段重编号**，历史条目内容未改。
 > *Note: conference years refer to actual proceedings; arXiv dates are v1. Credits to the awesome lists above. Four "attacking-AI / LLM-safety" papers removed previously: UDora, AgentPoison, CyberSecEval 1/3. A 2026-11-18 refresh against the LLM4Pentest list (123 entries) added 7 papers after de-duplication — most entries were already present from the 2026-09-11 cross-check. Each addition was verified against its arXiv abstract or DOI landing page; AI-system-security, defense-governance, preprint, thesis and non-LLM items were excluded. Tables A and C were renumbered; no historical entry content changed.*
+>
+> **本轮新增 D 段（2026-11-25）**：检索蜜罐/欺骗防御关键词后，新增独立「D. 蜜罐与欺骗防御（防御侧）」小节 10 篇，让进攻型研究也能对照了解针对 LLM 攻击者的防御措施（蜜罐、欺骗、诱捕、反制、WAF）。其中 **SoK: Honeypots & LLMs（2510.25939）、AIWAF、AgentSnare、Perry、Hacking Back the AI-Hacker** 为上轮「排除防御治理」清单中的条目，**本轮重新审查后转入 D 段**。仍排除（非蜜罐/欺骗防御技术）：Ethics Statements（2506.08693，伦理治理）、Poster 合规审计（10.1145/3719027.3760713），以及属「AI 系统自身安全 / 能力综述」的 RedTeamCUA（2505.21936）、Cyber-Capable AI Agents（2607.25379）、Rethinking PT for AI-Enabled Systems（2607.14006）、A Survey on Agentic Security（2510.06445）。10 篇均已回查 arXiv 摘要页 / DOI / USENIX 页面取得标题、作者、日期与渠道；AIWAF 为中文期刊（CNKI），仅确认到年（DOI 注册 2026-11），未补造月份。
+> *Note: section D (Honeypots, Cyber Deception & Anti-LLM-Attacker Defenses) was added on 2026-11-25 with 10 papers so offensive readers can see how defenders counter LLM attackers. Five previously excluded defense items (SoK Honeypots, AIWAF, AgentSnare, Perry, Hacking Back) were re-reviewed and moved into D; ethics/governance and AI-system-security surveys remain excluded. Each entry was verified against its arXiv abstract, DOI or USENIX page.*
 
 ---
 
@@ -554,7 +581,7 @@
 - **Skills**：**6** 个，Stars ≥ 100；以技能包为交付主体，不收自主 Agent/Subagent 框架。SecSkills 已声明停更；Claude-Red 与 hack-skills 的 Stars 为页面缩写（`≈11.2k` / `≈2.7k`），未取得精确整数。
 - **独立工具 MCP**：**10** 个，Stars ≥ 100；hexstrike-ai 与主表交叉出现，章节计数不等于去重项目总数。新增 3 个逆向工程 MCP，其桥接许可不覆盖 IDA Pro / Ghidra 本体。
 - **赛事 / Competitions**：**3** 个赛事系列（AIxCC 2025、腾讯云赛事、百度 Agent+）；腾讯云第一至第三届属于同一系列，各阶段获奖分别表述。
-- **论文 / Papers**：**129** 篇（A 70 / B 20 / C 39），覆盖 **2023-06 → 2026-10**；本轮按 LLM4Pentest 清单去重后新增 7 篇（arXiv 3 + 顶会顶刊 4），A 段与 C 段已重排重编号，历史条目内容未改。
+- **论文 / Papers**：**139** 篇（A 70 / B 20 / C 39 / D 10），覆盖 **2023-06 → 2026-11**；本轮新增 D 段「蜜罐与欺骗防御（防御侧）」10 篇（含 SoK 综述），供进攻型研究对照防御措施，A/B/C 历史条目未改。
 - **Benchmark**：**15** 个，覆盖 **2023-06 → 2026-10**；包括托管平台、完整研究资源、演示和网站入口，公开/复现状态见表。KaliBench 为单命令工具调用评测，不与端到端渗透基准横向比较。
 - **商业产品 / Commercial**：**32** 条（国内 12 + 海外精选 20）。国内表新增腾讯云「无境」并把微步在线调至首位，国内节整体前置到国外节之前；海外表此前替换 2 条（Veria、Dreadnode 进；Theori、Cohere Cyber 原 AISLE 出），行数保持 20。国内部分多处仍处邀测或交付待核，不等于 32 项都可自助购买。
 - **Awesome Lists**：**11** 个；索引与 Skills 可交叉计入各章，不冒充独立可执行 Agent。新增 `skyvanguard/awesome-ai-pentesting`（119），其 AI 系统安全分区仅作辅助来源。
